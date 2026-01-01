@@ -1,0 +1,93 @@
+{
+  "title": "Breakdown on the A2 Südautobahn? Complete Guide to 24/7 Roadside Assistance",
+  "description": "Roadside assistance on the A2: What to do in case of a breakdown? Step-by-step guide, safety tips, and why you should choose a local towing service from Sollenau.",
+  "date": "2025-12-23T00:00:00.000Z",
+  "updated": "2025-12-23T00:00:00.000Z",
+  "locale": "en",
+  "cluster": "roadside",
+  "slug": "breakdown-a2-roadside-assistance",
+  "translationKey": "awaria-a2",
+  "heroImage": "/images/blog/abschleppdienst-a2.webp",
+  "tags": [
+    "Roadside Assistance",
+    "Towing",
+    "A2",
+    "Safety"
+  ],
+  "faq": [
+    {
+      "q": "Do you offer roadside assistance at night?",
+      "a": "Yes, our 24/7 service operates 365 days a year, including holidays.",
+      "type": "FAQItem",
+      "_raw": {}
+    },
+    {
+      "q": "Can I pay by card for towing?",
+      "a": "Yes, we accept cash as well as all popular debit and credit cards directly with the tow truck driver.",
+      "type": "FAQItem",
+      "_raw": {}
+    },
+    {
+      "q": "How fast do you arrive on the A2?",
+      "a": "Thanks to our location in Sollenau, we are on the A2 within 15-30 minutes depending on traffic.",
+      "type": "FAQItem",
+      "_raw": {}
+    }
+  ],
+  "draft": false,
+  "featured": true,
+  "author": "Paweł Bogusław Ferdynus",
+  "body": {
+    "raw": "\n## First 5 Minutes After a Breakdown – Safety Guide\n\nA breakdown on the A2 motorway (Südautobahn) is a stressful situation. It is important to stay calm and follow safety rules. Traffic on this route is heavy, so every second counts for your safety and the safety of other road users.\n\n1. **Turn on hazard lights** – signal the problem to other drivers immediately.\n2. **Move to the hard shoulder** – if possible, stop the car as close to the barrier as possible.\n3. **Put on a reflective vest** – in Austria, this is mandatory for anyone exiting the car.\n4. **Exit the vehicle safely** – always from the passenger side (right side), never onto the roadway!\n5. **Set up the warning triangle** – at least 150 meters behind the vehicle.\n6. **Take cover behind the crash barrier** – never wait inside the car for roadside assistance.\n\n> [!IMPORTANT]\n> **Safety First:** Do not try to repair the car on the driving lane. If the car stopped in the left lane, turn on hazards and leave the vehicle as soon as it is safe, escaping to the median strip or behind the barrier.\n\n## Why Choose a Local Towing Service from Sollenau?\n\nAs a locally operating company since 2018, we know every kilometer of the A2 in the Wiener Neustadt and Baden area. Our base in Sollenau allows for immediate response. Unlike large corporations, with us you speak directly to the driver who is coming to you.\n\n### Our Advantages:\n*   **Fast Arrival:** Direct access to the A2.\n*   **Languages:** Service in Polish, German, and English – no language barriers in a stressful situation.\n*   **24/7 Availability:** Real round-the-clock duty, including holidays.\n*   **Transparency:** Clear prices agreed upon before arrival.\n\n## Service Comparison: Roadside Assistance vs. Towing\n\nCustomers often ask if they need towing or if on-site help is sufficient. Here is a short guide:\n\n| Service | When to choose? | Example action |\n| :--- | :--- | :--- |\n| **Roadside Assistance** | Minor fault, dead battery, flat tire | Jump start, wheel change, fuel delivery, minor electrical repairs |\n| **Towing Service** | Serious engine/gearbox failure, accident, steering damage | Towing to base in Sollenau, partner workshop, or international transport |\n\n### When is a Jump Start Sufficient?\nIf your car doesn't start after a stop, and the starter only clicks, the battery is likely dead. In this situation, our mobile service will arrive and start the car with a professional booster, also checking the alternator charging. This is a cheaper and faster option than towing.\n\n## What to Prepare Before Calling for Help?\n\nTo help us reach you as quickly as possible, prepare the following information:\n*   **Exact Location:** Kilometer number from the marker post (e.g., A2 km 34.5 direction Graz).\n*   **Car Make and Model:** And color – it will be easier for us to spot you.\n*   **Fault Description:** What happened? Are wheels locked? (Important for winching onto the truck).\n*   **Number of Passengers:** Do you need transport for your family?\n\n## Summary\n\nA breakdown on the A2 doesn't have to mean the end of your trip. With professional help from **Pablo e.U.**, you will quickly return to the road or safely reach your destination. Save our number today – better to have it and not need it, than need it and not have it.\n\n**Need help now? Click below!**\n",
+    "code": "var Component=(()=>{var u=Object.create;var a=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var m=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),w=(n,e)=>{for(var r in e)a(n,r,{get:e[r],enumerable:!0})},s=(n,e,r,o)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let i of g(e))!y.call(n,i)&&i!==r&&a(n,i,{get:()=>e[i],enumerable:!(o=f(e,i))||o.enumerable});return n};var b=(n,e,r)=>(r=n!=null?u(p(n)):{},s(e||!n||!n.__esModule?a(r,\"default\",{value:n,enumerable:!0}):r,n)),v=n=>s(a({},\"__esModule\",{value:!0}),n);var d=m((S,l)=>{l.exports=_jsx_runtime});var k={};w(k,{default:()=>c,frontmatter:()=>A});var t=b(d()),A={title:\"Breakdown on the A2 S\\xFCdautobahn? Complete Guide to 24/7 Roadside Assistance\",description:\"Roadside assistance on the A2: What to do in case of a breakdown? Step-by-step guide, safety tips, and why you should choose a local towing service from Sollenau.\",date:\"2025-12-23\",updated:\"2025-12-23\",locale:\"en\",cluster:\"roadside\",slug:\"breakdown-a2-roadside-assistance\",translationKey:\"awaria-a2\",heroImage:\"/images/blog/abschleppdienst-a2.webp\",tags:[\"Roadside Assistance\",\"Towing\",\"A2\",\"Safety\"],faq:[{q:\"Do you offer roadside assistance at night?\",a:\"Yes, our 24/7 service operates 365 days a year, including holidays.\"},{q:\"Can I pay by card for towing?\",a:\"Yes, we accept cash as well as all popular debit and credit cards directly with the tow truck driver.\"},{q:\"How fast do you arrive on the A2?\",a:\"Thanks to our location in Sollenau, we are on the A2 within 15-30 minutes depending on traffic.\"}],draft:!1,featured:!0,author:\"Pawe\\u0142 Bogus\\u0142aw Ferdynus\"};function h(n){let e={a:\"a\",blockquote:\"blockquote\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...n.components};return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{id:\"first-5-minutes-after-a-breakdown--safety-guide\",children:(0,t.jsx)(e.a,{href:\"#first-5-minutes-after-a-breakdown--safety-guide\",children:\"First 5 Minutes After a Breakdown \\u2013 Safety Guide\"})}),`\n`,(0,t.jsx)(e.p,{children:\"A breakdown on the A2 motorway (S\\xFCdautobahn) is a stressful situation. It is important to stay calm and follow safety rules. Traffic on this route is heavy, so every second counts for your safety and the safety of other road users.\"}),`\n`,(0,t.jsxs)(e.ol,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Turn on hazard lights\"}),\" \\u2013 signal the problem to other drivers immediately.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Move to the hard shoulder\"}),\" \\u2013 if possible, stop the car as close to the barrier as possible.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Put on a reflective vest\"}),\" \\u2013 in Austria, this is mandatory for anyone exiting the car.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Exit the vehicle safely\"}),\" \\u2013 always from the passenger side (right side), never onto the roadway!\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Set up the warning triangle\"}),\" \\u2013 at least 150 meters behind the vehicle.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Take cover behind the crash barrier\"}),\" \\u2013 never wait inside the car for roadside assistance.\"]}),`\n`]}),`\n`,(0,t.jsxs)(e.blockquote,{children:[`\n`,(0,t.jsxs)(e.p,{children:[`[!IMPORTANT]\n`,(0,t.jsx)(e.strong,{children:\"Safety First:\"}),\" Do not try to repair the car on the driving lane. If the car stopped in the left lane, turn on hazards and leave the vehicle as soon as it is safe, escaping to the median strip or behind the barrier.\"]}),`\n`]}),`\n`,(0,t.jsx)(e.h2,{id:\"why-choose-a-local-towing-service-from-sollenau\",children:(0,t.jsx)(e.a,{href:\"#why-choose-a-local-towing-service-from-sollenau\",children:\"Why Choose a Local Towing Service from Sollenau?\"})}),`\n`,(0,t.jsx)(e.p,{children:\"As a locally operating company since 2018, we know every kilometer of the A2 in the Wiener Neustadt and Baden area. Our base in Sollenau allows for immediate response. Unlike large corporations, with us you speak directly to the driver who is coming to you.\"}),`\n`,(0,t.jsx)(e.h3,{id:\"our-advantages\",children:(0,t.jsx)(e.a,{href:\"#our-advantages\",children:\"Our Advantages:\"})}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Fast Arrival:\"}),\" Direct access to the A2.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Languages:\"}),\" Service in Polish, German, and English \\u2013 no language barriers in a stressful situation.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"24/7 Availability:\"}),\" Real round-the-clock duty, including holidays.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Transparency:\"}),\" Clear prices agreed upon before arrival.\"]}),`\n`]}),`\n`,(0,t.jsx)(e.h2,{id:\"service-comparison-roadside-assistance-vs-towing\",children:(0,t.jsx)(e.a,{href:\"#service-comparison-roadside-assistance-vs-towing\",children:\"Service Comparison: Roadside Assistance vs. Towing\"})}),`\n`,(0,t.jsx)(e.p,{children:\"Customers often ask if they need towing or if on-site help is sufficient. Here is a short guide:\"}),`\n`,(0,t.jsxs)(e.table,{children:[(0,t.jsx)(e.thead,{children:(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.th,{style:{textAlign:\"left\"},children:\"Service\"}),(0,t.jsx)(e.th,{style:{textAlign:\"left\"},children:\"When to choose?\"}),(0,t.jsx)(e.th,{style:{textAlign:\"left\"},children:\"Example action\"})]})}),(0,t.jsxs)(e.tbody,{children:[(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:(0,t.jsx)(e.strong,{children:\"Roadside Assistance\"})}),(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:\"Minor fault, dead battery, flat tire\"}),(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:\"Jump start, wheel change, fuel delivery, minor electrical repairs\"})]}),(0,t.jsxs)(e.tr,{children:[(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:(0,t.jsx)(e.strong,{children:\"Towing Service\"})}),(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:\"Serious engine/gearbox failure, accident, steering damage\"}),(0,t.jsx)(e.td,{style:{textAlign:\"left\"},children:\"Towing to base in Sollenau, partner workshop, or international transport\"})]})]})]}),`\n`,(0,t.jsx)(e.h3,{id:\"when-is-a-jump-start-sufficient\",children:(0,t.jsx)(e.a,{href:\"#when-is-a-jump-start-sufficient\",children:\"When is a Jump Start Sufficient?\"})}),`\n`,(0,t.jsx)(e.p,{children:\"If your car doesn't start after a stop, and the starter only clicks, the battery is likely dead. In this situation, our mobile service will arrive and start the car with a professional booster, also checking the alternator charging. This is a cheaper and faster option than towing.\"}),`\n`,(0,t.jsx)(e.h2,{id:\"what-to-prepare-before-calling-for-help\",children:(0,t.jsx)(e.a,{href:\"#what-to-prepare-before-calling-for-help\",children:\"What to Prepare Before Calling for Help?\"})}),`\n`,(0,t.jsx)(e.p,{children:\"To help us reach you as quickly as possible, prepare the following information:\"}),`\n`,(0,t.jsxs)(e.ul,{children:[`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Exact Location:\"}),\" Kilometer number from the marker post (e.g., A2 km 34.5 direction Graz).\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Car Make and Model:\"}),\" And color \\u2013 it will be easier for us to spot you.\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Fault Description:\"}),\" What happened? Are wheels locked? (Important for winching onto the truck).\"]}),`\n`,(0,t.jsxs)(e.li,{children:[(0,t.jsx)(e.strong,{children:\"Number of Passengers:\"}),\" Do you need transport for your family?\"]}),`\n`]}),`\n`,(0,t.jsx)(e.h2,{id:\"summary\",children:(0,t.jsx)(e.a,{href:\"#summary\",children:\"Summary\"})}),`\n`,(0,t.jsxs)(e.p,{children:[\"A breakdown on the A2 doesn't have to mean the end of your trip. With professional help from \",(0,t.jsx)(e.strong,{children:\"Pablo e.U.\"}),\", you will quickly return to the road or safely reach your destination. Save our number today \\u2013 better to have it and not need it, than need it and not have it.\"]}),`\n`,(0,t.jsx)(e.p,{children:(0,t.jsx)(e.strong,{children:\"Need help now? Click below!\"})})]})}function c(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,{...n,children:(0,t.jsx)(h,{...n})}):h(n)}return v(k);})();\n;return Component;"
+  },
+  "_id": "blog/en/awaria-a2.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/en/awaria-a2.mdx",
+    "sourceFileName": "awaria-a2.mdx",
+    "sourceFileDir": "blog/en",
+    "contentType": "mdx",
+    "flattenedPath": "blog/en/awaria-a2"
+  },
+  "type": "BlogPost",
+  "categorySlug": "roadside-assistance",
+  "url": "/en/blog/roadside-assistance/breakdown-a2-roadside-assistance",
+  "readingTime": 3,
+  "headings": [
+    {
+      "depth": 2,
+      "text": "First 5 Minutes After a Breakdown – Safety Guide",
+      "slug": "first-5-minutes-after-a-breakdown--safety-guide"
+    },
+    {
+      "depth": 2,
+      "text": "Why Choose a Local Towing Service from Sollenau?",
+      "slug": "why-choose-a-local-towing-service-from-sollenau"
+    },
+    {
+      "depth": 3,
+      "text": "Our Advantages:",
+      "slug": "our-advantages"
+    },
+    {
+      "depth": 2,
+      "text": "Service Comparison: Roadside Assistance vs. Towing",
+      "slug": "service-comparison-roadside-assistance-vs-towing"
+    },
+    {
+      "depth": 3,
+      "text": "When is a Jump Start Sufficient?",
+      "slug": "when-is-a-jump-start-sufficient"
+    },
+    {
+      "depth": 2,
+      "text": "What to Prepare Before Calling for Help?",
+      "slug": "what-to-prepare-before-calling-for-help"
+    },
+    {
+      "depth": 2,
+      "text": "Summary",
+      "slug": "summary"
+    }
+  ]
+}

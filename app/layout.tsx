@@ -1,0 +1,100 @@
+import './globals.css';
+import type { Metadata } from 'next';
+import { headers, cookies } from 'next/headers';
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+
+import {
+  detectLocaleFromPath,
+  defaultLocale,
+  localeCookieName,
+} from '../lib/i18n';
+
+import { company } from '../lib/siteConfig';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(company.website),
+  title: {
+    default: company.name,
+    template: `%s | ${company.name}`,
+  },
+  description: company.name,
+  // alternates: {
+  //   canonical: '/',
+  //   languages: {
+  //     de: '/',
+  //     pl: '/pl',
+  //     en: '/en',
+  //     'x-default': '/',
+  //   },
+  // },
+  openGraph: {
+    title: company.name,
+    description: company.name,
+    url: '/',
+    siteName: company.name,
+    locale: 'de_AT',
+    alternateLocale: ['pl_PL', 'en_US'],
+    type: 'website',
+    images: [
+      {
+        url: '/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: company.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: company.name,
+    description: company.name,
+    images: ['/opengraph-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-48x48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/favicon-96x96.png', type: 'image/png', sizes: '96x96' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+  },
+  manifest: '/site.webmanifest',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const headerList = headers();
+  const path = headerList.get('next-url') ?? '/';
+  const localeCookie = cookies().get(localeCookieName)?.value;
+  const locale = detectLocaleFromPath(path, localeCookie) || defaultLocale;
+
+  return (
+    <html lang={locale}>
+      <head>
+        <meta
+          name="apple-mobile-web-app-title"
+          content="Autohandel und Abschleppdienst Pablo e.U."
+        />
+      </head>
+      <body className="antialiased">
+        <Header initialLocale={locale} />
+        <main className="min-h-screen">{children}</main>
+        <Footer initialLocale={locale} />
+        {process.env.NODE_ENV === 'production' ? <SpeedInsights /> : null}
+      </body>
+    </html>
+  );
+}
