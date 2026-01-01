@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import MDXRenderer from "../../../../../components/mdx/MDXRenderer";
-import JsonLd from "../../../../../components/JsonLd";
-import { getPost, getRelatedPosts, getTranslations } from "../../../../../lib/blog/posts";
-import { blogPostingJsonLd, breadcrumbsJsonLd, faqJsonLd } from "../../../../../lib/seo/blogSchema";
-import AuthorBox from "../../../../../components/blog/AuthorBox";
-import TableOfContents from "../../../../../components/blog/TableOfContents";
-import BlogCTA from "../../../../../components/blog/BlogCTA";
-import FAQSection from "../../../../../components/blog/FAQSection";
-import StickyMobileCTA from "../../../../../components/blog/StickyMobileCTA";
-import KeyTakeaways from "../../../../../components/blog/KeyTakeaways";
-import RelatedPosts from "../../../../../components/blog/RelatedPosts";
-import { ClusterKey } from "../../../../../lib/blog/config";
+import MDXRenderer from "@/components/mdx/MDXRenderer";
+import JsonLd from "@/components/JsonLd";
+import { getPost, getRelatedPosts, getTranslations, getPostBySlug, getAllPosts } from "@/lib/blog/posts";
+import { blogPostingJsonLd, breadcrumbsJsonLd, faqJsonLd } from "@/lib/seo/blogSchema";
+import AuthorBox from "@/components/blog/AuthorBox";
+import TableOfContents from "@/components/blog/TableOfContents";
+import BlogCTA from "@/components/blog/BlogCTA";
+import FAQSection from "@/components/blog/FAQSection";
+import StickyMobileCTA from "@/components/blog/StickyMobileCTA";
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
+import RelatedPosts from "@/components/blog/RelatedPosts";
+import { ClusterKey } from "@/lib/blog/config";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pablo-auto.at";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-    const { getAllPosts } = require("../../../../../lib/blog/posts");
-    const posts = getAllPosts("en");
-    return posts.map((p: any) => ({ category: p.categorySlug, slug: p.slug }));
+    const posts = getAllPosts("pl");
+    // Only slug needed now
+    return posts.map((p) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { category: string; slug: string } }): Metadata {
-    const post = getPost("en", params.category, params.slug);
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+    const post = getPostBySlug("pl", params.slug);
     if (!post) return {};
 
     const translations = getTranslations(post);
@@ -52,17 +52,17 @@ export function generateMetadata({ params }: { params: { category: string; slug:
     };
 }
 
-export default function BlogPostEN({ params }: { params: { category: string; slug: string } }) {
-    const post = getPost("en", params.category, params.slug);
+export default function BlogPostPL({ params }: { params: { slug: string } }) {
+    const post = getPostBySlug("pl", params.slug);
     if (!post) return notFound();
 
     const relatedPosts = getRelatedPosts(post);
 
     const postJsonLd = blogPostingJsonLd(SITE_URL, post);
     const crumbs = breadcrumbsJsonLd(SITE_URL, [
-        { name: "Home", path: "/en" },
-        { name: "Blog", path: "/en/blog" },
-        { name: post.categorySlug, path: `/en/blog/${post.categorySlug}` },
+        { name: "Home", path: "/" },
+        { name: "Poradnik", path: "/pl/poradnik" },
+        { name: post.categorySlug, path: `/pl/poradnik/kategoria/${post.categorySlug}` },
         { name: post.title, path: post.url },
     ]);
     const faq = faqJsonLd(post);
@@ -80,9 +80,9 @@ export default function BlogPostEN({ params }: { params: { category: string; slu
                     {post.description}
                 </p>
                 <div className="mt-4 flex items-center justify-center space-x-2 text-sm text-slate-500">
-                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("en-US")}</time>
+                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("pl-PL")}</time>
                     <span>•</span>
-                    <span>{post.readingTime} min read</span>
+                    <span>{post.readingTime} min czytania</span>
                 </div>
             </header>
 
@@ -94,38 +94,38 @@ export default function BlogPostEN({ params }: { params: { category: string; slu
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-12">
                 <article className="prose prose-slate prose-lg max-w-none">
-                    <KeyTakeaways items={post.takeaways} locale="en" />
+                    <KeyTakeaways items={post.takeaways} locale="pl" />
 
                     <TableOfContents headings={(post as any).headings || []} />
 
                     <MDXRenderer code={post.body.code} />
 
-                    <BlogCTA category={post.cluster as ClusterKey} locale="en" />
+                    <BlogCTA category={post.cluster as ClusterKey} locale="pl" />
 
                     <FAQSection items={post.faq || []} />
 
-                    <AuthorBox locale="en" />
+                    <AuthorBox locale="pl" />
                 </article>
 
                 <aside className="hidden lg:block space-y-8">
                     <div className="sticky top-24">
                         <div className="rounded-xl bg-slate-50 p-6 border border-slate-100">
-                            <h4 className="font-bold text-slate-900 mb-2">Have questions?</h4>
-                            <p className="text-sm text-slate-600 mb-4">Our team is happy to help.</p>
+                            <h4 className="font-bold text-slate-900 mb-2">Masz pytania?</h4>
+                            <p className="text-sm text-slate-600 mb-4">Nasz zespół chętnie pomoże.</p>
                             <a href="tel:+436641234567" className="block w-full rounded-lg bg-red-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-red-700">
-                                WhatsApp / Call
+                                WhatsApp / Telefon
                             </a>
                         </div>
                     </div>
                 </aside>
             </div>
 
-            <RelatedPosts posts={relatedPosts} locale="en" />
+            <RelatedPosts posts={relatedPosts} locale="pl" />
 
             <JsonLd data={postJsonLd as any} />
             <JsonLd data={crumbs as any} />
             {faq ? <JsonLd data={faq as any} /> : null}
-            <StickyMobileCTA locale="en" />
+            <StickyMobileCTA locale="pl" />
         </main>
     );
 }

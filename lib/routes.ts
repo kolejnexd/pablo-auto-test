@@ -13,8 +13,8 @@ export const routes = {
         rental: '/vermietung-service',
         transport: '/transport-umzug-logistik',
         faq: '/faq',
-        blog: '/blog',
-        blogRss: '/blog/rss.xml',
+        blog: '/ratgeber',
+        blogRss: '/ratgeber/rss.xml',
     },
     en: {
         home: '/',
@@ -28,8 +28,8 @@ export const routes = {
         rental: '/rental-service',
         transport: '/transport-logistics',
         faq: '/faq',
-        blog: '/blog',
-        blogRss: '/blog/rss.xml',
+        blog: '/guides',
+        blogRss: '/guides/rss.xml',
     },
     pl: {
         home: '/',
@@ -43,8 +43,8 @@ export const routes = {
         rental: '/wynajem-service',
         transport: '/transport-przeprowadzki',
         faq: '/faq',
-        blog: '/blog',
-        blogRss: '/blog/rss.xml',
+        blog: '/poradnik',
+        blogRss: '/poradnik/rss.xml',
     }
 } as const;
 

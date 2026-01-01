@@ -20,12 +20,14 @@ export const dynamicParams = false;
 
 export function generateStaticParams() {
     const { getAllPosts } = require("../../../../lib/blog/posts");
-    const posts = getAllPosts("de");
-    return posts.map((p: any) => ({ category: p.categorySlug, slug: p.slug }));
+    const posts = getAllPosts("en");
+    // Only slug needed now
+    return posts.map((p: any) => ({ slug: p.slug }));
 }
 
-export function generateMetadata({ params }: { params: { category: string; slug: string } }): Metadata {
-    const post = getPost("de", params.category, params.slug);
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+    const { getPostBySlug } = require("../../../../lib/blog/posts");
+    const post = getPostBySlug("en", params.slug);
     if (!post) return {};
 
     const translations = getTranslations(post);
@@ -52,17 +54,18 @@ export function generateMetadata({ params }: { params: { category: string; slug:
     };
 }
 
-export default function BlogPostDE({ params }: { params: { category: string; slug: string } }) {
-    const post = getPost("de", params.category, params.slug);
+export default function BlogPostEN({ params }: { params: { slug: string } }) {
+    const { getPostBySlug } = require("../../../../lib/blog/posts");
+    const post = getPostBySlug("en", params.slug);
     if (!post) return notFound();
 
     const relatedPosts = getRelatedPosts(post);
 
     const postJsonLd = blogPostingJsonLd(SITE_URL, post);
     const crumbs = breadcrumbsJsonLd(SITE_URL, [
-        { name: "Home", path: "/" },
-        { name: "Blog", path: "/blog" },
-        { name: post.categorySlug, path: `/blog/${post.categorySlug}` },
+        { name: "Home", path: "/en" },
+        { name: "Blog", path: "/en/blog" },
+        { name: post.categorySlug, path: `/en/blog/${post.categorySlug}` },
         { name: post.title, path: post.url },
     ]);
     const faq = faqJsonLd(post);
@@ -80,9 +83,9 @@ export default function BlogPostDE({ params }: { params: { category: string; slu
                     {post.description}
                 </p>
                 <div className="mt-4 flex items-center justify-center space-x-2 text-sm text-slate-500">
-                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("de-AT")}</time>
+                    <time dateTime={post.date}>{new Date(post.date).toLocaleDateString("en-US")}</time>
                     <span>•</span>
-                    <span>{post.readingTime} min Lesezeit</span>
+                    <span>{post.readingTime} min read</span>
                 </div>
             </header>
 
@@ -94,39 +97,38 @@ export default function BlogPostDE({ params }: { params: { category: string; slu
 
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_250px] gap-12">
                 <article className="prose prose-slate prose-lg max-w-none">
-                    <KeyTakeaways items={post.takeaways} locale="de" />
+                    <KeyTakeaways items={post.takeaways} locale="en" />
 
                     <TableOfContents headings={(post as any).headings || []} />
 
                     <MDXRenderer code={post.body.code} />
 
-                    <BlogCTA category={post.cluster as ClusterKey} locale="de" />
+                    <BlogCTA category={post.cluster as ClusterKey} locale="en" />
 
                     <FAQSection items={post.faq || []} />
 
-                    <AuthorBox locale="de" />
+                    <AuthorBox locale="en" />
                 </article>
 
                 <aside className="hidden lg:block space-y-8">
                     <div className="sticky top-24">
-                        {/* Space for dynamic sidebar widgets or ads if needed later */}
                         <div className="rounded-xl bg-slate-50 p-6 border border-slate-100">
-                            <h4 className="font-bold text-slate-900 mb-2">Haben Sie Fragen?</h4>
-                            <p className="text-sm text-slate-600 mb-4">Unser Team hilft Ihnen gerne weiter.</p>
-                            <a href="tel:+436641234567" className="block w-full rounded-lg bg-green-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-green-700">
-                                WhatsApp / Anruf
+                            <h4 className="font-bold text-slate-900 mb-2">Have questions?</h4>
+                            <p className="text-sm text-slate-600 mb-4">Our team is happy to help.</p>
+                            <a href="tel:+436641234567" className="block w-full rounded-lg bg-red-600 px-4 py-2 text-center text-sm font-bold text-white hover:bg-red-700">
+                                WhatsApp / Call
                             </a>
                         </div>
                     </div>
                 </aside>
             </div>
 
-            <RelatedPosts posts={relatedPosts} locale="de" />
+            <RelatedPosts posts={relatedPosts} locale="en" />
 
             <JsonLd data={postJsonLd as any} />
             <JsonLd data={crumbs as any} />
             {faq ? <JsonLd data={faq as any} /> : null}
-            <StickyMobileCTA locale="de" />
+            <StickyMobileCTA locale="en" />
         </main>
     );
 }

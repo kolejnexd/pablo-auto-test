@@ -28,6 +28,14 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // Legacy Blog Redirects
+      { source: '/blog', destination: '/ratgeber', permanent: true },
+      { source: '/blog/:slug', destination: '/ratgeber/:slug', permanent: true },
+      { source: '/pl/blog', destination: '/pl/poradnik', permanent: true },
+      { source: '/pl/blog/:slug', destination: '/pl/poradnik/:slug', permanent: true },
+      { source: '/en/blog', destination: '/en/guides', permanent: true },
+      { source: '/en/blog/:slug', destination: '/en/guides/:slug', permanent: true },
+
       // Legacy / Short DE Routes
       {
         source: "/abschleppdienst",
@@ -60,6 +68,40 @@ const nextConfig = {
         source: "/wynajem-service",
         destination: "/pl/wynajem-service",
         permanent: true,
+      },
+    ];
+  },
+
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'X-Frame-Options',
+            value: 'SAMEORIGIN',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), interest-cohort=()',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          }
+        ],
       },
     ];
   },

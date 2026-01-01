@@ -22,14 +22,9 @@ export const metadata: Metadata = {
   },
   description: company.name,
   // alternates: {
-  //   canonical: '/',
-  //   languages: {
-  //     de: '/',
-  //     pl: '/pl',
-  //     en: '/en',
-  //     'x-default': '/',
-  //   },
-  // },
+  //   canonical: './',
+  //   languages: { ... }
+  // }, -> REMOVED per-page architecture
   openGraph: {
     title: company.name,
     description: company.name,
@@ -75,6 +70,16 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+// ... imports ...
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const headerList = headers();
   const path = headerList.get('next-url') ?? '/';
@@ -82,14 +87,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const locale = detectLocaleFromPath(path, localeCookie) || defaultLocale;
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={inter.variable}>
       <head>
         <meta
           name="apple-mobile-web-app-title"
           content="Autohandel und Abschleppdienst Pablo e.U."
         />
       </head>
-      <body className="antialiased">
+      <body className="antialiased font-sans">
         <Header initialLocale={locale} />
         <main className="min-h-screen">{children}</main>
         <Footer initialLocale={locale} />

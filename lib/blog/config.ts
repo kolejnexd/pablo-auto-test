@@ -90,7 +90,9 @@ export function getCategoryAlternates(currentLocale: Locale, categorySlug: strin
 
     // Helper to build URL
     const getUrl = (loc: Locale, slug: string) => {
-        const prefix = loc === 'de' ? '/blog' : `/${loc}/blog`;
+        const prefix = loc === 'de' ? '/ratgeber/kategorie' :
+            loc === 'pl' ? '/pl/poradnik/kategoria' :
+                '/en/guides/category';
         return `${siteUrl}${prefix}/${slug}`;
     };
 

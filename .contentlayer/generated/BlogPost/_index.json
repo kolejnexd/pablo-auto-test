@@ -52,7 +52,7 @@
     },
     "type": "BlogPost",
     "categorySlug": "pannenhilfe",
-    "url": "/blog/pannenhilfe/awaria-na-a2-pomoc-drogowa",
+    "url": "/ratgeber/awaria-na-a2-pomoc-drogowa",
     "readingTime": 3,
     "headings": [
       {
@@ -145,7 +145,7 @@
     },
     "type": "BlogPost",
     "categorySlug": "roadside-assistance",
-    "url": "/en/blog/roadside-assistance/breakdown-a2-roadside-assistance",
+    "url": "/en/guides/breakdown-a2-roadside-assistance",
     "readingTime": 3,
     "headings": [
       {
@@ -238,7 +238,7 @@
     },
     "type": "BlogPost",
     "categorySlug": "pomoc-drogowa",
-    "url": "/pl/blog/pomoc-drogowa/awaria-na-a2-pomoc-drogowa",
+    "url": "/pl/poradnik/awaria-na-a2-pomoc-drogowa",
     "readingTime": 3,
     "headings": [
       {
@@ -318,7 +318,7 @@
     },
     "type": "BlogPost",
     "categorySlug": "pomoc-drogowa",
-    "url": "/pl/blog/pomoc-drogowa/awaria-a2-pomoc-drogowa-24-7",
+    "url": "/pl/poradnik/awaria-a2-pomoc-drogowa-24-7",
     "readingTime": 1,
     "headings": [
       {

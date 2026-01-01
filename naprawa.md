@@ -1,212 +1,208 @@
-# CODEX MASTER PROMPT — Pablo e.U. Blog (SEO 2025/2026 + AI Search + UX + Internal Linking)
-You are an elite production engineer (Next.js App Router + Tailwind + Contentlayer2/MDX) and a Technical SEO strategist for 2025/2026. Execute without commentary. Implement, verify, commit.
+# ROLA
+Działasz jako Senior Full-Stack Developer & Tech SEO Engineer specjalizujący się w Next.js 14 (App Router) oraz Contentlayer (MDX). Masz pełny dostęp do wszystkich plików repozytorium `pablo-auto-test` i Twoim zadaniem jest doprowadzenie projektu do stanu produkcyjnego “State of the Art” pod kątem technicznym + SEO (nr 1 widoczność).
 
-## PROJECT FACTS (DO NOT CHANGE)
-- Framework: Next.js App Router
-- Styling: Tailwind
-- Content: MDX + Contentlayer2
-- Locales: DE default `/`, PL `/pl`, EN `/en`
-- Domain: https://pablo-auto.at
-- Blog routes already exist:
-  - /blog, /blog/[category], /blog/[category]/[slug]
-  - /pl/blog/...
-  - /en/blog/...
-- Existing components/utilities:
-  - components: MDXContent.tsx, RelatedPosts.tsx, PostCard.tsx, MobileStickyBar.tsx, JsonLd.tsx
-  - lib/seo/*, lib/blog/*, app/sitemap.ts, lib/routes.ts
-- Phone CTA: +43 664 1261735
-- Business: Pablo e.U. Autohandel & Abschleppdienst (Sollenau / Wiener Neustadt / A2)
+# ZASADY (NIE NEGOCJOWAĆ)
+1) ZERO PYTAŃ. Analizujesz kod i naprawiasz. Jeśli czegoś brakuje – tworzysz to zgodnie z best practices.
+2) ZMIANY MAJĄ BYĆ PRODUKCYJNE: czysty TypeScript, poprawne typy, brak “edukacyjnych” komentarzy.
+3) NIE USUWAJ TREŚCI MDX – możesz poprawić strukturę, frontmatter i routing, ale nie kasuj wpisów.
+4) I18N: niemiecki jest domyślny i NIGDY nie ma prefiksu /de w URL. Jeśli istnieją URL-e z /de → mają być przekierowane do wersji bez /de.
+5) Canonical/hreflang muszą być poprawne na każdej stronie i zawsze self-referencing canonical (na siebie).
+6) Każdy wpis blog/poradnik ma działać w swoim języku i nie może prowadzić do 404 ani mieszać slugów między językami.
 
-## PRIMARY GOAL
-Turn the blog into the core of Topical Authority and outrank competitors:
-- Perfect technical SEO: canonical + hreflang + metadata + schema (BlogPosting + FAQPage + BreadcrumbList)
-- Strong internal linking architecture sitewide
-- UX layout that boosts trust/EEAT and AI Search extraction (Key Takeaways, tables, FAQ)
-- Zero sitemap duplicates + valid RSS feeds per locale
-- Clean codebase: remove unused stuff, fix warnings that affect build
+# KONTEKST PROJEKTU (FACT SHEET)
+- Framework: Next.js 14 (App Router)
+- Content: Contentlayer, pliki MDX w `content/blog/...`
+- Styling: Tailwind CSS
+- Data Source: `lib/data` (lokalne JSON/TS) + Contentlayer
+- i18n / URL mapping (ŹRÓDŁO PRAWDY: `lib/routes.ts`):
+  - de (default, bez prefiksu): `/`, `/ratgeber` (zamiast blog), `/kontakt`
+  - pl (prefiks `/pl`): `/pl`, `/pl/poradnik`, `/pl/kontakt`
+  - en (prefiks `/en`): `/en`, `/en/guides` (lub `/en/blog` — zweryfikuj w `routes.ts` i USTAL JEDNO)
+- Priorytet: eliminacja 404, poprawna indeksacja, schema.org, CWV.
 
-## REQUIRED BLOG SEO (METADATA)
-Use these as defaults for DE blog index; localize for PL/EN equivalents.
-- Meta Title (DE): Mobilitäts-Ratgeber Pablo e.U. | Abschleppdienst & Autohandel Blog
-- Meta Description (DE): Experten-Tipps zu Pannenhilfe auf der A2, Gebrauchtwagenkauf in Niederösterreich und Fahrzeugankauf. Ihr Partner für Mobilität in Sollenau.
-- URL structure: https://pablo-auto.at/blog/... (NO /de prefix)
-- PL: https://pablo-auto.at/pl/blog/...
-- EN: https://pablo-auto.at/en/blog/...
+# DEFINICJA “DONE” (MUSI BYĆ SPEŁNIONA)
+A) `install + lint + typecheck + build` przechodzą bez błędów.
+B) Brak 404 na kluczowych trasach w 3 językach: home, kontakt, index poradnika/bloga, przykładowe wpisy.
+C) Poprawne canonical + alternates.languages (hreflang) na każdej stronie.
+D) sitemap + robots poprawne i zawierają wszystkie języki + wpisy.
+E) JSON-LD poprawny (Organization/LocalBusiness + BlogPosting + BreadcrumbList + FAQ jeśli występuje).
+F) Performance: next/image, fonty przez next/font, minimalizacja LCP/CLS i zbędnego JS.
+G) Security baseline: nagłówki, podstawowy hardening, dependency sanity.
 
-## STRATEGIC TOPIC CLUSTERS (CATEGORIES) — MUST MATCH ROUTES + CONTENTLAYER
-DE clusters (slugs):
-1) pannenhilfe (24/7 Abschlepp- & Pannenhilfe-Ratgeber)
-2) ratgeber-kauf (Gebrauchtwagen-Markt & Trends)
-3) autoankauf (Autoankauf & Wertermittlung)
-4) mobilitaet (Mobilität & Mietwagen)
-5) logistik-recht (Logistik & Grenzüberschreitendes AT-PL)
+# WYMUSZENIE TRYBU PRACY (JAK MASZ DZIAŁAĆ)
+1) Najpierw zrób audyt repo: routing, contentlayer, middleware, metadata, schema, sitemap/robots, perf.
+2) Następnie wdroż poprawki w kodzie.
+3) Na końcu przygotuj output w wymaganym formacie (pełne pliki do nadpisania + raport).
 
-PL clusters (slugs):
-1) pomoc-drogowa
-2) poradnik-kupujacy
-3) sprzedaz-skup
-4) wynajem-mobilnosc
-5) logistyka-przepisy
+========================================================
+## ETAP 0 — WYKRYCIE SETUPU + KOMENDY
+1) Wykryj package manager: pnpm/yarn/npm na podstawie lockfile.
+2) Uruchom (lub zasymuluj realistycznie) i napraw:
+   - install
+   - lint
+   - typecheck (dodaj script jeśli nie ma: "tsc --noEmit")
+   - build: `next build`
+3) Zidentyfikuj czy projekt ma być SSR/ISR czy statyczny export. Jeżeli wynika z repo, dopasuj konfigurację.
 
-EN clusters (slugs):
-1) roadside-assistance
-2) buying-guide
-3) car-selling
-4) mobility-rental
-5) logistics-law
+========================================================
+## ETAP 1 — CONTENTLAYER (CRITICAL)
+1) Sprawdź `contentlayer.config.ts`:
+   - computedFields muszą poprawnie generować:
+     - `slug` (bez prefiksów folderów typu de/pl/en jeśli występują)
+     - `url` zgodny z `lib/routes.ts` (ratgeber/poradnik/guides)
+   - walidacja wymaganych pól frontmatter: title, description, date, image (i locale).
+2) Jeśli brakuje `locale` w frontmatter:
+   - stwórz `scripts/fix-frontmatter.mjs`, który:
+     - wykrywa locale z folderu (np. content/blog/pl/…)
+     - dopisuje `locale: pl/en/de` jeśli brak
+     - NIE psuje istniejących pól i formatowania.
+3) Napraw błędy typów w `generated` (Contentlayer) tak, by build był stabilny.
 
-Create/maintain a single source-of-truth mapping object (e.g., lib/blog/config.ts) with:
-- label per locale
-- slug per locale
-- which service page each cluster must link to (internal linking “money pages”)
+========================================================
+## ETAP 2 — ROUTING + I18N (SEO CORE, ZERO 404)
+Cel: brak 404 i brak błędnych przekierowań.
+1) Audyt `lib/routes.ts`:
+   - to jest single source of truth dla mapowania ścieżek (home, contact, blog index, blog post).
+   - USTAL JEDNĄ poprawną ścieżkę dla EN: `/en/guides` albo `/en/blog` (zgodnie z routes.ts) i doprowadź całość do spójności.
+2) App Router:
+   - sprawdź struktury `app/` oraz segmenty `[lang]` / brak `[lang]` dla DE.
+   - Jeśli masz `app/[lang]/...`, dopilnuj aby DE działał bez prefiksu (middleware/rewrites).
+   - Napraw `generateStaticParams` tak, by generował wszystkie języki i wszystkie slugi (Contentlayer).
+3) Linkowanie:
+   - Każdy `<Link href>` ma być locale-aware i używać routes.ts helperów (dodaj helpery jeśli trzeba).
+4) Middleware:
+   - Zweryfikuj `middleware.ts`:
+     - NIE dodaje /de
+     - wykrywa defaultLocale = de
+     - naprawia złe URL-e i robi redirect 301:
+       - `/de/...` -> `/<...>` (bez de)
+       - inne błędne warianty -> poprawne wg routes.ts
+5) Dodaj testy Playwright (lub inny e2e), które sprawdzają HTTP 200 + brak 404 dla:
+   - /, /kontakt, /ratgeber
+   - /pl, /pl/kontakt, /pl/poradnik
+   - /en, /en/contact (jeśli jest), /en/guides (lub /en/blog zgodnie z ustaleniem)
+   - co najmniej 1 wpis w każdym języku (post URL + category jeśli jest)
 
-## UX/UI SPEC (BLOG PAGES) — MUST IMPLEMENT
-### 1) Blog Index / Archive Page
-- Add a fast search input (client-side filter) for posts by title/excerpt/tags
-- Featured Post section (full width) for “isFeatured” post; if none, newest post
-- Grid of cards: rounded-xl + subtle shadow (shadow-soft) consistent with site
-- Each card shows:
-  - language badge (DE/PL/EN)
-  - cluster badge
-  - title, excerpt, date, image
+========================================================
+## ETAP 3 — SEO META (Metadata API) (TECHNICAL EXCELLENCE)
+Wdróż/napraw w App Router:
+1) `metadataBase` w `app/layout.tsx` (absolute URLs).
+2) Dla każdej strony: `generateMetadata` lub `metadata`:
+   - title + description per język
+   - openGraph + twitter
+   - canonical: self-referencing (dokładny URL tej strony)
+   - alternates.languages (hreflang) automatycznie generowane:
+     - de (bez prefiksu)
+     - pl (/pl/…)
+     - en (/en/…)
+     - opcjonalnie x-default (na DE home)
+3) Robots meta:
+   - index/follow na publicznych
+   - noindex na wewnętrznych technicznych (jeśli istnieją)
+4) Breadcrumbs (meta nie, ale przygotuj pod schema w ETAP 4).
 
-### 2) Post Page (EEAT + SGE)
-- Author Box:
-  - DE: “Geschrieben von Paweł Bogusław Ferdynus – Experte für Mobilität seit 2018”
-  - PL/EN localized equivalents
-- Key Takeaways block near the top (“Zusammenfassung / Najważniejsze / Key takeaways”)
-  - Extract from MDX frontmatter if present (takeaways array); fallback to auto summary stub
-- FAQ section at bottom (rendered + JSON-LD FAQPage if exists)
-- Sticky CTA (mobile):
-  - DE: “24/7 Notruf wählen”
-  - PL: “Zadzwoń 24/7”
-  - EN: “Call 24/7”
-  - tel:+436641261735
-- Related posts at end (same cluster/locale)
+========================================================
+## ETAP 4 — SCHEMA.ORG (JSON-LD) + RICH RESULTS
+Wymagany minimalny zestaw (bez duplikacji i sprzeczności):
+A) Globalnie (layout):
+- Organization (lub LocalBusiness jeśli to sensowniejsze) z:
+  - name, url, logo, contactPoint, sameAs
+B) Ratgeber/Poradnik/Guides listing:
+- CollectionPage + BreadcrumbList
+C) Blog post (MDX):
+- BlogPosting/Article z:
+  - headline, description, author, datePublished, dateModified, image, mainEntityOfPage
+D) Usługi (jeśli są):
+- AutoTowingService / TowingService / AutoDealer (dobierz właściwe typy)
+E) FAQPage tylko jeśli FAQ realnie jest widoczne na stronie.
 
-## INTERNAL LINKING ARCHITECTURE — MUST IMPLEMENT SITEWIDE
-Add blog entry points everywhere:
+Implementacja:
+- Wstaw JSON-LD przez `<script type="application/ld+json">` w layout/stronie.
+- Zadbaj o spójność danych między językami (ten sam biznes, różne opisy).
 
-1) Header:
-- Add nav item:
-  - DE: “Ratgeber”
-  - PL: “Poradnik”
-  - EN: “Guides”
-- Link to localized blog index
+Dodaj test walidujący:
+- JSON parse
+- obecność kluczowych pól dla danej strony
+- brak duplikacji Organization (np. 3 razy na 1 stronie)
 
-2) Homepage:
-- Add “Aktuelle Tipps / Aktualne porady / Latest guides” section:
-  - 3 newest posts for current locale
-  - cards with subtle shadow
-  - CTA to blog index
-- Place under car offers or before “Why us” section (pick best existing section location)
+========================================================
+## ETAP 5 — SITEMAP + ROBOTS + RSS
+1) Sprawdź/napraw:
+- `app/sitemap.ts`:
+  - iteruje po dokumentach Contentlayer (np. allBlogPosts)
+  - generuje URL-e dla wszystkich języków zgodnie z routes.ts
+  - ustawia sensowne lastmod
+- `robots.txt`:
+  - wskazuje sitemap
+  - nie blokuje kluczowych ścieżek
+2) RSS:
+- jeśli istnieje `app/.../rss.xml/route.ts`, doprowadź do spójności i18n:
+  - osobne feedy per język lub jeden globalny (ustal w kodzie i opisz w raporcie).
+3) Sprawdź canonical w sitemap (nie mieszaj języków).
 
-3) Service pages contextual box:
-Add a reusable component (e.g., components/blog/BlogTeaserBox.tsx) and insert:
-- Abschleppdienst pages: show 1–3 posts from roadside assistance cluster
-- Autohandel pages: show 1–3 posts from buying/selling clusters
-- Vermietung pages: show 1–3 posts from mobility-rental cluster
-- Transport/Logistik pages: show 1–3 posts from logistics cluster
+========================================================
+## ETAP 6 — PERFORMANCE / CORE WEB VITALS
+1) Zamień <img> na next/image tam gdzie ma sens.
+2) Dodaj poprawne `sizes`, ogranicz `priority` tylko do LCP (hero).
+3) Fonty:
+- tylko next/font (google lub local), żadnych CSS importów z CDN.
+4) Bundle:
+- dodaj bundle analyzer (skrypt)
+- ogranicz zbędne JS, dynamic import ciężkich komponentów.
+5) Dodaj Lighthouse CI (lub minimalny skrypt) + ustaw budżety:
+- SEO >= 95
+- Perf >= 90 (o ile realne bez niszczenia UX)
 
-4) Footer:
-Add “Warto wiedzieć / Wissen / Useful” column:
-- link to blog index
-- link to top 3 cluster hubs (locale-aware)
+========================================================
+## ETAP 7 — ACCESSIBILITY (BASIC)
+- 1x H1 per strona, hierarchia nagłówków
+- aria-label dla ikon i przycisków
+- alt teksty obrazów (sensowne, nie spam)
+- focus styles działają
 
-5) 404 page:
-Instead of plain 404, show:
-- quick links + 3 newest/popular posts (locale-aware)
-- link to blog index and clusters
+========================================================
+## ETAP 8 — SECURITY BASELINE
+- Zaimplementuj sensowne security headers w Next.js (np. w next.config lub middleware):
+  - HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy (jeśli sensowne)
+  - CSP jeśli potrafisz bez psucia (jeśli nie – opisz rekomendację i zostaw TODO)
+- dependency sanity: minimalny audit i fix krytycznych rzeczy bez rozwalenia.
 
-6) Optional conversion placements:
-After demonstrate: add blog link on contact form success/confirmation area:
-“Während Sie warten: Lesen Sie unseren Ratgeber” (localized)
+========================================================
+# WYMAGANY OUTPUT (MUSISZ ZWRÓCIĆ DOKŁADNIE TAK)
+### 1) RAPORT STANU (EXECUTIVE SUMMARY)
+- 3–7 punktów: co było krytyczne i co naprawiłeś.
 
-## TECHNICAL SEO — MUST IMPLEMENT
-### Canonical + hreflang
-For every page type (index/category/post):
-- generateMetadata returns absolute canonical (https://pablo-auto.at/...)
-- alternates.languages includes: de, pl, en, x-default
-- x-default -> DE canonical
-- NO incorrect /de prefix
+### 2) TABELA PROBLEMÓW
+Kolumny: Severity | Obszar | Objaw | Przyczyna (plik + linie) | Fix (co zmieniono)
 
-### OpenGraph/Twitter
-- Posts: openGraph type “article”
-- Use post image else /og-image.png
-- twitter card summary_large_image
+### 3) PLIKI DO NADPISANIA (CODE BLOCKS)
+Dla każdego pliku, który zmieniłeś lub dodałeś:
+- podaj PEŁNY kod pliku (nie diff)
 
-### JSON-LD schema
-For post page include (no duplicates):
-- BlogPosting
-- BreadcrumbList
-- FAQPage when FAQ exists
-Include Organization publisher for Pablo e.U.
-Add address/service area in Organization/LocalBusiness schema if already available in lib/siteConfig.ts; reuse it.
+- w nagłówku podaj ścieżkę pliku
+Format:
+FILE: path/to/file.ts
 
-### Sitemap & duplicates
-- Update app/sitemap.ts
-- Ensure it includes:
-  - main pages (DE/PL/EN)
-  - service pages
-  - vehicles pages
-  - blog index/category/post pages for all locales
-- MUST dedupe by URL at the end (Set / map)
-- Ensure no duplicates like repeated /autohandel-gebrauchtwagen etc.
+<pełna treść>
 
-### RSS feeds
-- Ensure /blog/rss.xml, /pl/blog/rss.xml, /en/blog/rss.xml are valid XML
-- Only that locale’s posts
-- Use canonical URLs
-- Include correct language code and lastBuildDate
+========================================================
+### 4) KOMENDY I WYNIKI
+jakie komendy uruchomiłeś (install/lint/typecheck/build/tests)
 
-## CONTENTLAYER / MDX MODEL — MUST BE ROBUST
-Standardize frontmatter fields:
-- title (required)
-- excerpt (required)
-- date (required)
-- lastModified (optional)
-- heroImage (optional)
-- locale (enum de/pl/en)
-- category (enum per locale mapping)
-- tags (optional)
-- takeaways (optional string[])
-- faq (optional array of FAQItem { question, answer })
-Fix any Contentlayer nested type issues:
-- Ensure FAQItem is properly defined and used (no “undefined” type errors)
-- If any MDX has wrong frontmatter, fix MDX too
+status: OK / naprawione
 
-## “MISSING ELEMENTS” — ADD THESE
-Add a localized mini FAQ (site-level) somewhere relevant (blog index footer or sidebar) answering:
-1) DE/PL/EN: Where is the HQ in Sollenau? (Use data from lib/siteConfig.ts)
-2) Payment forms after service (cash/card/transfer if known; if unknown: add neutral “cash and common cards” only if already used elsewhere; otherwise add “ask driver”)
-3) Supported languages (DE/PL/EN)
-4) What exactly covers 24/7 assistance on A2 (towing, jump start, tire change, transport) — align with existing service content
+### 5) CHECKLIST “DONE”
+A–G z definicji DONE i odhaczone.
 
-## CLEANUP / QUALITY
-- Remove unused files/components/utilities introduced during blog work
-- Fix broken image reference: /images/blog/a2-laweta.webp 404 (either add the file in public/images/blog/ or update MDX to a valid existing image)
-- Fix runtime/dev warnings that affect build quality:
-  - If framer-motion complains about missing dependency (@emotion/is-prop-valid), add dependency OR refactor to remove that import path usage. Ensure build passes.
-- Run: npm run build — must pass
-- Run: npm run lint — fix critical issues if present
+### UWAGA KOŃCOWA
+Nie kończ pracy dopóki:
 
-## OUTPUT REQUIREMENTS
-1) Implement everything above in code.
-2) Add a concise verification doc: BLOG_AUDIT.md
-   - commands to run
-   - URLs to check (index/category/post per locale)
-   - how to verify canonical/hreflang (view-source)
-   - how to validate schema (Rich Results Test / Schema validator)
-3) Commit with message:
-   feat(blog): SEO hardening + UX + internal linking + sitemap/rss cleanup
+nie ma 404 na trasach i wpisach w 3 językach,
 
-## IMPLEMENTATION ORDER (DO NOT SKIP)
-1) Fix sitemap duplicates + include blog URLs
-2) Canonical/hreflang for blog index/category/post
-3) Schema (BlogPosting + BreadcrumbList + FAQPage)
-4) Blog UX layout (index + post enhancements)
-5) Internal linking placements (header/home/service/footer/404)
-6) Fix images + dependencies (404 and framer-motion warning)
-7) Final build + smoke test
+canonical/hreflang nie są perfekcyjne,
 
-GO.
+sitemap/robots nie są kompletne,
+
+schema JSON-LD nie przechodzi walidacji,
+
+build i testy nie są zielone.

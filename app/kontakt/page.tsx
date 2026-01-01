@@ -8,16 +8,17 @@ import { company } from '../../lib/siteConfig';
 
 import { generateSeoMetadata } from '../../lib/seo/metadataUtils';
 
-import { generatePageAlternates } from '../../lib/seo/metadataUtils';
+import { constructMetadata } from '@/lib/metadata';
 
 export function generateMetadata(): Metadata {
   const locale = getServerLocale();
   const entry = seoConfig.kontakt;
-  return {
+  return constructMetadata({
     title: entry.title[locale],
     description: entry.description[locale],
-    alternates: generatePageAlternates('contact', locale)
-  };
+    key: 'contact',
+    locale,
+  });
 }
 
 export default function KontaktPage() {

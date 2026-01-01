@@ -22,9 +22,10 @@ export function getAllBlogSitemapEntries(siteUrl: string): MetadataRoute.Sitemap
             priority: 0.7,
         });
 
+        const categorySegment = locale === 'de' ? 'kategorie' : locale === 'pl' ? 'kategoria' : 'category';
         for (const categorySlug of Object.values(CATEGORY_SLUG[locale])) {
             entries.push({
-                url: `${siteUrl}${getRoute("blog", locale)}/${categorySlug}`,
+                url: `${siteUrl}${getRoute("blog", locale)}/${categorySegment}/${categorySlug}`,
                 lastModified: new Date(),
                 changeFrequency: "weekly",
                 priority: 0.6,

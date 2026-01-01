@@ -1,6 +1,21 @@
 import type { BlogPost } from "contentlayer/generated";
-import type { WithContext, BlogPosting, BreadcrumbList, FAQPage } from "schema-dts";
-import { company } from "../siteConfig"; // Assuming this exists, based on PLAN.md suggesting structure consistency. Wait, plan imported from ../siteConfig. I need to check if siteConfig exists. If not, I will mock it or create it.
+import type { WithContext, BlogPosting, BreadcrumbList, FAQPage, CollectionPage } from "schema-dts";
+import { company } from "../siteConfig";
+
+export function collectionPageJsonLd(siteUrl: string, title: string, description: string, url: string): WithContext<CollectionPage> {
+    return {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        name: title,
+        description: description,
+        url: `${siteUrl}${url}`,
+        isPartOf: {
+            "@type": "WebSite",
+            name: company.name,
+            url: siteUrl,
+        },
+    };
+}
 // Actually, looking at PLAN.md it imports from `../siteConfig`.
 // I'll assume it exists or replace with hardcoded if not found in my exploration.
 // I'll check existence of siteConfig first in next step or just default to hardcoded if simple. 

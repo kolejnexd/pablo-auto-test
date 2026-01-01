@@ -16,19 +16,18 @@ import { getRoute } from '../lib/routes';
 import { FAQ_SNIPPETS } from '../lib/data/seo-snippets';
 import { generateFaqSchema } from '../lib/seo/schemaUtils';
 import { getHomepageSchema } from '../lib/seo/homepageSchema';
-import { generateHomepageAlternates } from '../lib/seo/metadataUtils';
-
-export const revalidate = 86400; // 24 hours
+import { constructMetadata } from '@/lib/metadata';
 
 export function generateMetadata(): Metadata {
   const locale = getServerLocale();
   const entry = seoConfig.home;
 
-  return {
+  return constructMetadata({
     title: entry.title[locale],
     description: entry.description[locale],
-    alternates: generateHomepageAlternates()
-  };
+    key: 'home',
+    locale: locale,
+  });
 }
 
 export default function HomePage() {
@@ -82,7 +81,7 @@ export default function HomePage() {
 
             {/* Video Column - Smaller, Horizontal, Right Aligned */}
             <div className="relative mx-auto w-full max-w-[560px] self-center justify-self-end lg:ml-auto lg:mr-0">
-              <div className="aspect-[16/10] w-full transform transition-transform duration-500 hover:scale-[1.02] lg:translate-x-4">
+              <div className="aspect-[16/10] w-full lg:translate-x-4">
                 <HeroVideo />
               </div>
             </div>

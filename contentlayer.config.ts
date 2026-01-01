@@ -82,9 +82,19 @@ export const BlogPost = defineDocumentType(() => ({
             type: "string",
             resolve: (doc) => {
                 const locale = doc.locale as Locale;
-                const categorySlug = CATEGORY_SLUG[locale][doc.cluster as ClusterKey];
-                const prefix = locale === "de" ? "" : `/${locale}`;
-                return `${prefix}/blog/${categorySlug}/${doc.slug}`;
+                // Semantic URL structure:
+                // DE: /ratgeber/[slug]
+                // PL: /pl/poradnik/[slug]
+                // EN: /en/guides/[slug]
+
+                if (locale === 'pl') {
+                    return `/pl/poradnik/${doc.slug}`;
+                }
+                if (locale === 'en') {
+                    return `/en/guides/${doc.slug}`;
+                }
+                // DE matches default /ratgeber
+                return `/ratgeber/${doc.slug}`;
             },
         },
         readingTime: {

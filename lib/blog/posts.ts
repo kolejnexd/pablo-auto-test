@@ -15,6 +15,10 @@ export function getPostsByCategorySlug(locale: Locale, categorySlug: string): Bl
     return getAllPosts(locale).filter((p) => p.cluster === cluster);
 }
 
+export function getPostBySlug(locale: Locale, slug: string): BlogPost | null {
+    return getAllPosts(locale).find((p) => p.slug === slug) || null;
+}
+
 export function getPost(locale: Locale, categorySlug: string, slug: string): BlogPost | null {
     const post = getAllPosts(locale).find((p) => p.slug === slug);
     if (!post) return null;
