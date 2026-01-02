@@ -31,30 +31,28 @@ export default function HeroVideo() {
 			{/* Poster Image - Fades out when video is ready */}
 			{/* eslint-disable-next-line @next/next/no-img-element */}
 			<img
-				src="/assets/seo/pablo-eu-abschleppdienst-a2-autohandel-sollenau-hero.webp"
-				alt="Abschleppdienst Pablo Hero Poster"
-				className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
-					isVideoReady ? "opacity-0" : "opacity-100"
-				}`}
+				src="/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.webp"
+				alt="Pablo e.U. Autohandel Sollenau Wien und Abschleppwagen auf der Autobahn A2 Südautobahn."
+				className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${isVideoReady ? "opacity-0" : "opacity-100"
+					}`}
 			/>
 
 			{/* Video - Fades in when ready */}
 			<video
 				ref={videoRef}
-				className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${
-					isVideoReady ? "opacity-100" : "opacity-0"
-				}`}
+				className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ease-out ${isVideoReady ? "opacity-100" : "opacity-0"
+					}`}
 				muted
 				loop
 				autoPlay
 				playsInline
 				preload="metadata"
-				poster="/assets/seo/pablo-eu-abschleppdienst-a2-autohandel-sollenau-hero.webp"
+				poster="/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.webp"
 				aria-hidden="true"
 				tabIndex={-1}
 			>
-				<source src="/hero-laweta-loop.webm" type="video/webm" />
-				<source src="/hero-laweta-loop.mp4" type="video/mp4" />
+				<source src="/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.webm" type="video/webm" />
+				<source src="/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.mp4" type="video/mp4" />
 			</video>
 
 			{/* Overlay - Always visible */}

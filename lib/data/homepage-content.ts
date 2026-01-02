@@ -1,7 +1,7 @@
 export const HOMEPAGE_CONTENT = {
 	hero: {
 		h1: {
-			de: "Ihr Partner für Mobilität: Autohandel, Abschleppdienst & Vermietung",
+			de: "Ihr Partner für Mobilität: Autohandel, Abschleppdienst & Mietwagen",
 			pl: "Twój Partner Mobilności: Skup Aut, Pomoc Drogowa i Wynajem",
 			en: "Your Mobility Partner: Car Sales, Towing Service & Rental",
 		},

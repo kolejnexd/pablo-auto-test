@@ -8,25 +8,25 @@ export type ClusterKey =
 	| "mobility";
 
 export const BLOG_META: Record<Locale, { title: string; description: string }> =
-	{
-		de: {
-			title:
-				"Mobilitäts-Ratgeber Pablo e.U. | Abschleppdienst & Autohandel Blog",
-			description:
-				"Experten-Tipps zur Pannenhilfe auf der A2, Gebrauchtwagenmarkt in Niederösterreich und Autoankauf. Ihr Mobilitätspartner in Sollenau.",
-		},
-		pl: {
-			title: "Pablo e.U. | Porady, pomoc drogowa i rynek aut w Austrii",
-			description:
-				"Ekspercka wiedza o pomocy drogowej 24/7 na A2, zakupie aut używanych i przepisach drogowych w Austrii. Dowiedz się, jak bezpiecznie podróżować i mądrze kupować.",
-		},
-		en: {
-			title:
-				"Pablo e.U. Blog | Roadside assistance, cars & transport in Austria",
-			description:
-				"Expert guides on 24/7 roadside assistance (A2), buying/selling used cars, and transport/logistics in Austria.",
-		},
-	};
+{
+	de: {
+		title:
+			"Mobilitäts-Ratgeber Pablo e.U. | Abschleppdienst & Autohandel Blog",
+		description:
+			"Experten-Tipps zur Pannenhilfe auf der A2, Gebrauchtwagenmarkt in Niederösterreich und Autoankauf. Ihr Mobilitätspartner in Sollenau.",
+	},
+	pl: {
+		title: "Pablo e.U. | Porady, pomoc drogowa i rynek aut w Austrii",
+		description:
+			"Ekspercka wiedza o pomocy drogowej 24/7 na A2, zakupie aut używanych i przepisach drogowych w Austrii. Dowiedz się, jak bezpiecznie podróżować i mądrze kupować.",
+	},
+	en: {
+		title:
+			"Pablo e.U. Blog | Roadside assistance, cars & transport in Austria",
+		description:
+			"Expert guides on 24/7 roadside assistance (A2), buying/selling used cars, and transport/logistics in Austria.",
+	},
+};
 
 export const CATEGORY_NAMES: Record<Locale, Record<ClusterKey, string>> = {
 	de: {
@@ -34,7 +34,7 @@ export const CATEGORY_NAMES: Record<Locale, Record<ClusterKey, string>> = {
 		buying: "Gebrauchtwagen-Markt & Trends",
 		selling: "Autoankauf & Wertermittlung",
 		logistics: "Logistik & Grenzüberschreitender Transport (AT–PL)",
-		mobility: "Mobilität & Mietwagen",
+		mobility: "Mobilität & Vermietung",
 	},
 	pl: {
 		roadside: "Pomoc Drogowa",

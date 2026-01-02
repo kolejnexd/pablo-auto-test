@@ -2,7 +2,7 @@ export type Locale = "de" | "pl" | "en";
 
 export interface FAQItem {
 	id: string;
-	category: "abschleppdienst" | "autohandel" | "vermietung" | "transport";
+	category: "abschleppdienst" | "autohandel" | "Vermietung" | "transport";
 	question: Record<Locale, string>;
 	answer: Record<Locale, string>;
 }
@@ -25,9 +25,9 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 	},
 	{
 		id: "faq-rental-1",
-		category: "vermietung",
+		category: "Vermietung",
 		question: {
-			de: "Bieten Sie Mietwagen ohne Kreditkarte an?",
+			de: "Bieten Sie Vermietung ohne Kreditkarte an?",
 			pl: "Czy oferujecie wynajem samochodów bez karty kredytowej?",
 			en: "Do you offer car rental without a credit card?",
 		},
@@ -66,10 +66,10 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 		},
 	},
 
-	// KATEGORIA 3: VERMIETUNG
+	// KATEGORIA 3: Vermietung
 	{
 		id: "faq-rental-1",
-		category: "vermietung",
+		category: "Mietwagen",
 		question: {
 			de: "Kann ich einen Transporter ohne Kreditkarte mieten?",
 			pl: "Gdzie wynajmę busa do przeprowadzki w Wiedniu, jeśli nie mam karty kredytowej?",
@@ -83,7 +83,7 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 	},
 	{
 		id: "faq-rental-2",
-		category: "vermietung",
+		category: "Mietwagen",
 		question: {
 			de: "Sind im Mietpreis von 29€ Vollkasko und Vignette enthalten?",
 			pl: "Czy cena wynajmu 29€ za dzień zawiera pełne ubezpieczenie (Vollkasko)?",
@@ -97,7 +97,7 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 	},
 	{
 		id: "faq-rental-3",
-		category: "vermietung",
+		category: "Mietwagen",
 		question: {
 			de: "Ich lebe im Ausland, besitze aber eine Wohnung in Wien – wer verwaltet sie?",
 			pl: "Mieszkam w Polsce, ale mam mieszkanie inwestycyjne w Wiedniu – kto się nim zajmie?",
@@ -111,7 +111,7 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 	},
 	{
 		id: "faq-rental-4",
-		category: "vermietung",
+		category: "Mietwagen",
 		question: {
 			de: "Liefern Sie einen Leihwagen direkt zu meiner Werkstatt?",
 			pl: "Czy dostarczycie auto zastępcze do warsztatu w Mödling po wypadku?",
@@ -125,7 +125,7 @@ export const FAQ_SNIPPETS: FAQItem[] = [
 	},
 	{
 		id: "faq-rental-5",
-		category: "vermietung",
+		category: "Mietwagen",
 		question: {
 			de: "Ich brauche ein Auto für 3 Monate ohne Leasing – welche Optionen habe ich?",
 			pl: "Szukam auta na 3 miesiące bez wiązania się leasingiem na lata – co wybrać?",

@@ -144,6 +144,30 @@ export type Translations = {
 		legalLinks: { href: string; label: string }[];
 		useful: string;
 		usefulLinks: { href: string; label: string }[];
+		ctaBar: {
+			title: string;
+			subtitle: string;
+			callBtn: string;
+			whatsappBtn: string;
+		};
+		trust: {
+			rating: string;
+			time: string;
+			insured: string;
+			invoice: string;
+		};
+		status: {
+			towing: string;
+			sales: string;
+		};
+		quickActions: {
+			navigate: string;
+			email: string;
+			cars: string;
+		};
+		social: {
+			reviews: string;
+		};
 	};
 	home: {
 		hero: {
@@ -421,7 +445,7 @@ const translations: Record<Locale, Translations> = {
 		common: {
 			badge: "24/7 Service • Zweisprachig DE/PL",
 			supporting:
-				"Schnelle Hilfe auf der A2, im Bezirk Wiener Neustadt-Land und direkt in Sollenau. Fahrzeuge, Abschleppdienst und Vermietung aus einer Hand.",
+				"Schnelle Hilfe auf der A2, im Bezirk Wiener Neustadt-Land und direkt in Sollenau. Fahrzeuge, Abschleppdienst und Mietwagen aus einer Hand.",
 			whatsapp: "WhatsApp",
 			callNow: "24/7 Notruf wählen",
 			whatsappAction: "WhatsApp Standort senden",
@@ -477,13 +501,37 @@ const translations: Record<Locale, Translations> = {
 				{ href: "/blog/unfall-verkehrsrecht", label: "Unfall & Recht" },
 				{ href: "/blog/elektromobilitaet", label: "E-Mobilität" },
 			],
+			ctaBar: {
+				title: "Brauchen Sie 24/7 Hilfe?",
+				subtitle: "Wir sind rund um die Uhr für Sie erreichbar – auch an Feiertagen.",
+				callBtn: "Jetzt anrufen",
+				whatsappBtn: "WhatsApp",
+			},
+			trust: {
+				rating: "4.9/5 Google",
+				time: "Anfahrt ~30 Min (A2)",
+				insured: "Versicherter Transport",
+				invoice: "Rechnung / Quittung",
+			},
+			status: {
+				towing: "Pannenhilfe: 24/7",
+				sales: "Autohandel: Termin nach Vereinbarung",
+			},
+			quickActions: {
+				navigate: "Navigation starten",
+				email: "Anfrage senden",
+				cars: "Fahrzeuge ansehen",
+			},
+			social: {
+				reviews: "Bewertungen",
+			},
 		},
 		home: {
 			hero: {
 				title:
 					"Pablo e.U. – Ihr Mobilitäts-Partner in Sollenau & Wien: Autohandel, Abschleppdienst & Transport",
 				subtitle:
-					"Als zertifizierter Einzelunternehmer (e.U.) mit Basis in Sollenau direkt an der Südautobahn A2, garantieren wir eine Reaktionszeit von 30 Minuten bis ins Zentrum von Wien. Unser Spezialfahrzeug transportiert auch Elektroautos (Tesla) sicher. Alles aus einer Hand: Abschleppdienst, Autohandel und Vermietung.",
+					"Als zertifizierter Einzelunternehmer (e.U.) mit Basis in Sollenau direkt an der Südautobahn A2, garantieren wir eine Reaktionszeit von 30 Minuten bis ins Zentrum von Wien. Unser Spezialfahrzeug transportiert auch Elektroautos (Tesla) sicher. Alles aus einer Hand: Abschleppdienst, Autohandel und Mietwagen.",
 				badges: "🇦🇹 🇵🇱 🇬🇧 Wir sprechen Deutsch, Polnisch & Englisch",
 				primaryCta: "Notruf: +43 664 1261735",
 				secondaryCta: "Leistungen ansehen",
@@ -521,7 +569,7 @@ const translations: Record<Locale, Translations> = {
 					linkLabel: "Fahrzeuge ansehen",
 				},
 				rental: {
-					title: "Vermietung & Ersatzwagen",
+					title: "Mietwagen & Ersatzwagen",
 					description:
 						"Bleiben Sie mobil, auch wenn Ihr Auto in der Werkstatt steht. Mietwagen ohne Kreditkarte.",
 					features: [
@@ -795,7 +843,7 @@ const translations: Record<Locale, Translations> = {
 		},
 		rental: {
 			title:
-				"Vermietung Pablo e.U.: Mietwagen & Immobilien-Management in Baden & Wien",
+				"Mietwagen Pablo e.U.: Mietwagen & Immobilien-Management in Baden & Wien",
 			intro:
 				"Ihr Fahrzeug steht in der Werkstatt oder Sie benötigen kurzfristig einen Transporter? Wir sorgen für nahtlose Mobilität – oft kombiniert mit Abschleppdienst und Bereitstellung eines Ersatzwagens.",
 			fleetTitle: "Unsere Mietflotte",
@@ -859,10 +907,10 @@ const translations: Record<Locale, Translations> = {
 		about: {
 			title: "Über uns – Autohandel & Abschleppdienst Pablo e.U.",
 			intro:
-				"Seit 2018 verbindet Inhaber Paweł Bogusław Ferdynus Gebrauchtwagenhandel mit Abschleppdienst, Pannenhilfe und Vermietung. Als Einzelunternehmen setzen wir auf persönliche Zuverlässigkeit, zweisprachige Betreuung und lokale Expertise in Sollenau und Umgebung.",
+				"Seit 2018 verbindet Inhaber Paweł Bogusław Ferdynus Gebrauchtwagenhandel mit Abschleppdienst, Pannenhilfe und Mietwagen. Als Einzelunternehmen setzen wir auf persönliche Zuverlässigkeit, zweisprachige Betreuung und lokale Expertise in Sollenau und Umgebung.",
 			storyTitle: "Die Geschichte von Pablo e.U.",
 			story:
-				"Gestartet als regionaler Autohandel mit Fokus auf faire Gebrauchtwagen, wurde der Abschleppdienst schnell zum zweiten Standbein. Heute bieten wir eine einzigartige Kombination aus Handel, Notdienst und Vermietung – alles aus einer Hand.",
+				"Gestartet als regionaler Autohandel mit Fokus auf faire Gebrauchtwagen, wurde der Abschleppdienst schnell zum zweiten Standbein. Heute bieten wir eine einzigartige Kombination aus Handel, Notdienst und Mietwagen – alles aus einer Hand.",
 			secondTitle: "Mehr als nur ein Autohändler",
 			second:
 				"Wir organisieren Abschleppungen, stellen Ersatzwagen bereit und beraten beim Kauf oder Verkauf von Fahrzeugen. Ob PKW, Transporter, Anhänger oder Zweiräder – wir sorgen dafür, dass Sie mobil bleiben.",
@@ -877,7 +925,7 @@ const translations: Record<Locale, Translations> = {
 			why: "Persönlicher Ansprechpartner, schnelle Reaktionszeiten, transparente Konditionen und ehrlicher Service – das macht uns aus.",
 			ctaTitle: "Lernen Sie uns kennen",
 			ctaDescription:
-				"Wir freuen uns auf Ihre Anfrage – ob Notruf, Fahrzeugkauf oder Vermietung.",
+				"Wir freuen uns auf Ihre Anfrage – ob Notruf, Fahrzeugkauf oder Mietwagen.",
 			primary: "Kontakt aufnehmen",
 			secondary: "Fahrzeuge ansehen",
 		},
@@ -901,7 +949,7 @@ const translations: Record<Locale, Translations> = {
 		faq: {
 			title: "FAQ & Ratgeber",
 			intro:
-				"Antworten auf die häufigsten Fragen zu Abschleppdienst, Autohandel und Vermietung.",
+				"Antworten auf die häufigsten Fragen zu Abschleppdienst, Autohandel und Mietwagen.",
 			items: [
 				{
 					question: "Wie schnell kommt Ihr Abschleppdienst zur Unfallstelle?",
@@ -1105,6 +1153,30 @@ const translations: Record<Locale, Translations> = {
 				{ href: "/pl/blog/logistyka-przepisy", label: "Wypadek i Prawo" },
 				{ href: "/pl/blog/wynajem-mobilnosc", label: "Elektromobilność" },
 			],
+			ctaBar: {
+				title: "Potrzebujesz pomocy 24/7?",
+				subtitle: "Jesteśmy dostępni przez całą dobę – również w święta.",
+				callBtn: "Zadzwoń teraz",
+				whatsappBtn: "WhatsApp",
+			},
+			trust: {
+				rating: "4.9/5 Google",
+				time: "Dojazd ~30 min (A2)",
+				insured: "Ubezpieczony transport",
+				invoice: "Faktura / Paragon",
+			},
+			status: {
+				towing: "Pomoc drogowa: 24/7",
+				sales: "Autohandel: Termin do uzgodnienia",
+			},
+			quickActions: {
+				navigate: "Nawiguj do nas",
+				email: "Wyślij zapytanie",
+				cars: "Zobacz auta",
+			},
+			social: {
+				reviews: "Opinie",
+			},
 		},
 		home: {
 			hero: {
@@ -1720,6 +1792,30 @@ const translations: Record<Locale, Translations> = {
 				{ href: "/en/blog/logistics-law", label: "Accident & Law" },
 				{ href: "/en/blog/mobility-rental", label: "E-Mobility" },
 			],
+			ctaBar: {
+				title: "Need 24/7 Help?",
+				subtitle: "We are available around the clock – even on holidays.",
+				callBtn: "Call Now",
+				whatsappBtn: "WhatsApp",
+			},
+			trust: {
+				rating: "4.9/5 Google",
+				time: "Arrival ~30 min (A2)",
+				insured: "Insured Transport",
+				invoice: "Invoice / Receipt",
+			},
+			status: {
+				towing: "Roadside: 24/7",
+				sales: "Sales: By Appointment",
+			},
+			quickActions: {
+				navigate: "Navigate to Us",
+				email: "Send Inquiry",
+				cars: "View Cars",
+			},
+			social: {
+				reviews: "Reviews",
+			},
 		},
 		home: {
 			hero: {

@@ -20,7 +20,7 @@ import HeroMapGraphic from "../../components/HeroMapGraphic";
 
 export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getServerLocale();
-	const entry = seoConfig.vermietung;
+	const entry = seoConfig.Vermietung;
 
 	return {
 		title: entry.title[locale],
@@ -49,8 +49,8 @@ export default async function RentalPage() {
 				secondaryCta={{ label: t.rental.secondary, href: "tel:+436641261735" }}
 				// ✅ zamiast obrazka
 				rightGraphic={<HeroMapGraphic className="w-full h-auto" />}
-				// backgroundImage zostawiamy opcjonalnie, ale nie jest potrzebny
-				// backgroundImage="/images/hero-rental.jpg"
+			// backgroundImage zostawiamy opcjonalnie, ale nie jest potrzebny
+			// backgroundImage="/images/hero-rental.jpg"
 			/>
 
 			<USPs items={t.rental.fleet} title={t.rental.fleetTitle} />

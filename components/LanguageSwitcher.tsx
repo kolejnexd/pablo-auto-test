@@ -15,6 +15,12 @@ interface Props {
 	initialLocale?: Locale;
 }
 
+const flags: Record<Locale, string> = {
+	de: "🇩🇪",
+	pl: "🇵🇱",
+	en: "🇬🇧",
+};
+
 export default function LanguageSwitcher({ initialLocale }: Props) {
 	const pathname = usePathname() || "/";
 	const cookieLocale = readLocaleCookie(
@@ -31,30 +37,27 @@ export default function LanguageSwitcher({ initialLocale }: Props) {
 					key={code}
 					href={
 						pathname === "/" ||
-						pathname === "/pl" ||
-						pathname === "/en" ||
-						pathname === "/pl/" ||
-						pathname === "/en/"
+							pathname === "/pl" ||
+							pathname === "/en" ||
+							pathname === "/pl/" ||
+							pathname === "/en/"
 							? code === "de"
 								? "/"
 								: `/${code}`
 							: code === "de" &&
-									(pathname.startsWith("/pl") || pathname.startsWith("/en"))
+								(pathname.startsWith("/pl") || pathname.startsWith("/en"))
 								? getLocaleHref(pathname, "de", preferredLocale) === "/"
 									? "/"
 									: getLocaleHref(pathname, "de", preferredLocale)
 								: getLocaleHref(pathname, code, preferredLocale)
 					}
-					className={`rounded-full border px-3 py-1 transition hover:border-brand-primary hover:text-brand-primary ${
-						currentLocale === code
-							? "border-brand-primary text-brand-primary"
+					className={`flex items-center gap-1 rounded-full border px-3 py-1 transition hover:border-brand-primary hover:text-brand-primary ${currentLocale === code
+							? "border-brand-primary text-brand-primary bg-brand-primary/5"
 							: "border-gray-200 text-gray-700"
-					}`}
+						}`}
 					prefetch={false}
 					onClick={() => {
 						document.cookie = `${localeCookieName}=${code}; path=/; max-age=${maxAge}`;
-						// Force reload if switching locale on the same path (e.g. '/' with different cookie)
-						// or if the underlying content needs to change based on cookie
 						setTimeout(() => {
 							window.location.href =
 								code === "de" && (pathname === "/pl" || pathname === "/en")
@@ -63,7 +66,8 @@ export default function LanguageSwitcher({ initialLocale }: Props) {
 						}, 100);
 					}}
 				>
-					{code.toUpperCase()}
+					<span className="text-base leading-none">{flags[code]}</span>
+					<span className="font-medium">{code.toUpperCase()}</span>
 				</Link>
 			))}
 		</div>

@@ -17,7 +17,6 @@ import Script from "next/script";
 import { Button } from "../components/Button";
 import FaqAccordion from "../components/FaqAccordion";
 import HeroVideo from "../components/HeroVideo";
-import MobileStickyCallBar from "../components/MobileStickyCallBar";
 import ServiceCard from "../components/ServiceCard";
 import TrustBar from "../components/TrustBar";
 import PostCard from "../components/blog/PostCard";
@@ -33,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
 	const locale = await getServerLocale();
 
 	const title =
-		"Pablo e.U. Sollenau & Wien | Abschleppdienst A2, Autohandel & Vermietung"; // Fixed DE title as master
+		"Pablo e.U. Sollenau & Wien | Autohandel, Abschleppdienst A2 & Mietwagen";
 	const description =
 		"Ihr Partner für Mobilität an der A2: Abschleppdienst in 30 Min (Wien–Baden), zertifizierter Gebrauchtwagen-Handel, Mietwagen ohne Kreditkarte & Transport. Seit 2018.";
 
@@ -49,7 +48,7 @@ export async function generateMetadata(): Promise<Metadata> {
 			"x-default": "https://pablo-auto.at/",
 		},
 		image:
-			"/assets/seo/pablo-eu-abschleppdienst-a2-autohandel-sollenau-hero.webp",
+			"/assets/seo/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.webp",
 	});
 }
 
@@ -60,7 +59,6 @@ export default async function HomePage() {
 	const kpiIcons = [Clock, ShieldCheck, Calendar];
 
 	return (
-
 		<div className="flex flex-col">
 			{/* SECTION 1: HERO & TRUSTBAR */}
 			<section className="relative overflow-hidden bg-white pt-10 pb-8 md:pt-16 md:pb-12 bg-gradient-to-b from-blue-50/20 to-white">
@@ -71,6 +69,11 @@ export default async function HomePage() {
 							<h1 className="text-4xl font-extrabold tracking-tight text-brand-primary md:text-5xl lg:text-6xl lg:leading-[1.1]">
 								{t.home.hero.title}
 							</h1>
+
+							{/* Mobile Video: positioned right under H1 on small screens */}
+							<div className="lg:hidden w-full overflow-hidden rounded-2xl shadow-lg ring-1 ring-slate-100 aspect-[16/10]">
+								<HeroVideo />
+							</div>
 							<p className="max-w-prose text-lg text-slate-600 leading-relaxed md:text-xl">
 								{t.home.hero.subtitle}
 							</p>
@@ -127,8 +130,8 @@ export default async function HomePage() {
 							</div>
 						</div>
 
-						{/* Video Column */}
-						<div className="relative mx-auto w-full max-w-[600px] lg:ml-auto lg:mr-0">
+						{/* Video Column - Hidden on mobile, shown on desktop */}
+						<div className="hidden lg:block relative mx-auto w-full max-w-[600px] lg:ml-auto lg:mr-0">
 							<div className="aspect-[16/10] w-full overflow-hidden rounded-2xl shadow-xl ring-1 ring-slate-100">
 								<HeroVideo />
 							</div>
@@ -255,9 +258,6 @@ export default async function HomePage() {
 
 			{/* JSON-LD Schemas */}
 			<SeoJsonLd />
-
-			{/* Mobile Sticky Bar */}
-			<MobileStickyCallBar />
 		</div>
 	);
 }

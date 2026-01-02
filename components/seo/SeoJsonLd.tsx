@@ -32,7 +32,7 @@ const SeoJsonLd = () => {
 				"@type": "WebPage",
 				"@id": `${baseUrl}/#webpage`,
 				url: `${baseUrl}/`,
-				name: "Pablo e.U. Sollenau & Wien | Abschleppdienst A2, Autohandel & Vermietung",
+				name: "Pablo e.U. Sollenau & Wien | Abschleppdienst A2, Autohandel & Mietwagen",
 				isPartOf: { "@id": `${baseUrl}/#website` },
 				about: { "@id": `${baseUrl}/#business` },
 				inLanguage: "de-AT",
@@ -49,7 +49,7 @@ const SeoJsonLd = () => {
 				name: "Pablo e.U. Autohandel & Abschleppdienst",
 				url: `${baseUrl}/`,
 				telephone: "+436641261735",
-				image: `${baseUrl}/assets/seo/pablo-eu-abschleppdienst-a2-autohandel-sollenau-hero.webp`,
+				image: `${baseUrl}/assets/seo/pablo-eu-autohandel-sollenau-wien-abschleppdienst-a2.webp`,
 				description:
 					"Ihr Partner für Mobilität an der A2: Abschleppdienst in 30 Min (Wien–Baden), zertifizierter Gebrauchtwagen-Handel, Mietwagen ohne Kreditkarte & Transport. Seit 2018.",
 				priceRange: "€€",
@@ -128,7 +128,7 @@ const SeoJsonLd = () => {
 							"@type": "Offer",
 							itemOffered: {
 								"@type": "Service",
-								name: "Vermietung",
+								name: "Mietwagen",
 								serviceType: "Mietwagen & Transporter (auch ohne Kreditkarte)",
 							},
 						},

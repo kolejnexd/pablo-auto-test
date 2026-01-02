@@ -45,7 +45,7 @@ export const LOCATION_PAGES: LocationPageConfig[] = [
 		],
 	},
 	{
-		slug: "mietwagen-baden-bei-wien",
+		slug: "Vermietung-baden-bei-wien",
 		serviceCategory: "rental",
 		language: "de",
 		geoEntity: "Baden bei Wien",

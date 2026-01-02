@@ -1,6 +1,2 @@
-export {
-	generateMetadata,
-} from "../../datenschutz/page";
-export {
-	default,
-} from "../../datenschutz/page";
+export { generateMetadata } from "../../datenschutz/page";
+export { default } from "../../datenschutz/page";

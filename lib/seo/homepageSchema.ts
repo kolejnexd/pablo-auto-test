@@ -9,7 +9,7 @@ export const getHomepageSchema = () => {
 		],
 		"@id": "https://pablo-auto.at/#organization",
 		name: "Pablo e.U. Autohandel & Abschleppdienst",
-		alternateName: ["Pablo e.U. Vermietung & Transport", "Pablo Auto Sollenau"],
+		alternateName: ["Pablo e.U. Mietwagen & Transport", "Pablo Auto Sollenau"],
 		url: "https://pablo-auto.at/",
 		logo: "https://pablo-auto.at/assets/logo-pablo-autohandel-abschleppdienst.png",
 		image: "https://pablo-auto.at/abschleppdienst-24h-sollenau-a2-einsatz.webp",
@@ -121,13 +121,13 @@ export const getHomepageSchema = () => {
 				},
 				{
 					"@type": "OfferCatalog",
-					name: "Vermietung (Mietwagen & Immobilien)",
+					name: "Vermietung (Fahrzeuge & Immobilien)",
 					itemListElement: [
 						{
-							"@type": "RentalVehicleUsage",
-							name: "Transporter & Mietwagen Verleih",
+							"@type": "Service",
+							name: "Transporter & Vermietung Verleih",
 							description:
-								"Mietwagen ohne Kreditkarte, Unfallersatzwagen, 9-Sitzer Busse.",
+								"Vermietung ohne Kreditkarte, Unfallersatzwagen, 9-Sitzer Busse.",
 							priceSpecification: {
 								"@type": "UnitPriceSpecification",
 								priceCurrency: "EUR",

@@ -42,7 +42,7 @@ export const seoConfig: Record<string, SeoEntry> = {
 			en: "Verified quality: Used cars, buying & selling in Sollenau near Vienna. Financing with no down payment, warranty & export service. Book a test drive!",
 		},
 	},
-	vermietung: {
+	Vermietung: {
 		title: {
 			de: "Vermietung Pablo e.U.: Mietwagen & Immobilien in Baden & Wien",
 			pl: "Wynajem Pablo e.U.: Auta i Nieruchomości w Baden i Wiedniu",
@@ -73,7 +73,7 @@ export const seoConfig: Record<string, SeoEntry> = {
 			en: "About us | Autohandel & Abschleppdienst Pablo e.U.",
 		},
 		description: {
-			de: "Seit 2018 verbindet Pablo e.U. Gebrauchtwagenhandel mit Abschleppdienst, Vermietung und mehrsprachiger Betreuung (DE/PL/EN) in Sollenau.",
+			de: "Seit 2018 verbindet Pablo e.U. Gebrauchtwagenhandel mit Abschleppdienst, Mietwagen und mehrsprachiger Betreuung (DE/PL/EN) in Sollenau.",
 			pl: "Od 2018 łączymy autohandel z lawetą, wynajmem i obsługą PL/DE/EN w Sollenau.",
 			en: "Since 2018 we combine used car trading with towing, rentals and German/Polish/English support from Sollenau.",
 		},
@@ -97,7 +97,7 @@ export const seoConfig: Record<string, SeoEntry> = {
 			en: "FAQ & advice | Pablo Sollenau",
 		},
 		description: {
-			de: "Antworten zu Abschleppdienst, Gebrauchtwagen und Vermietung in Sollenau und entlang der A2.",
+			de: "Antworten zu Abschleppdienst, Gebrauchtwagen und Mietwagen in Sollenau und entlang der A2.",
 			pl: "Odpowiedzi dotyczące lawety, autohandlu i wynajmu w Sollenau i przy A2.",
 			en: "Answers about towing, used cars and rentals around Sollenau and the A2.",
 		},

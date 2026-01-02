@@ -1,13 +1,6 @@
 {
 	"files": {
-		"ignore": [
-			".next",
-			".velite",
-			"dist",
-			"node_modules",
-			"coverage",
-			"public"
-		]
+		"ignore": [".next", ".velite", "dist", "node_modules", "coverage", "public"]
 	},
 	"linter": {
 		"enabled": true,

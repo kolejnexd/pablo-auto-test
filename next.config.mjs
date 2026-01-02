@@ -60,7 +60,7 @@ const nextConfig = {
 				permanent: true,
 			},
 			{
-				source: "/vermietung",
+				source: "/Vermietung",
 				destination: "/vermietung-service",
 				permanent: true,
 			},
