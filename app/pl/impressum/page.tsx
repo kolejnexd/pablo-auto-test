@@ -1,2 +1,6 @@
-export { generateMetadata } from '../../impressum/page';
-export { default } from '../../impressum/page';
+export {
+	generateMetadata,
+} from "../../impressum/page";
+export {
+	default,
+} from "../../impressum/page";

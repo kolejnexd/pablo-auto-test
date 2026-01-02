@@ -1,0 +1,45 @@
+{
+	"files": {
+		"ignore": [
+			".next",
+			".velite",
+			"dist",
+			"node_modules",
+			"coverage",
+			"public"
+		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"security": {
+				"noDangerouslySetInnerHtml": "off"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off",
+				"noShadowRestrictedNames": "off",
+				"noAssignInExpressions": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "off"
+			},
+			"complexity": {
+				"noForEach": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			},
+			"a11y": {
+				"noSvgWithoutTitle": "off",
+				"useAltText": "warn",
+				"useButtonType": "off",
+				"useHtmlLang": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true
+	}
+}

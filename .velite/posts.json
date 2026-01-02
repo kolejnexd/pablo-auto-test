@@ -1,0 +1,250 @@
+[
+  {
+    "title": "Panne auf der A2 Südautobahn? Der komplette 24/7 Pannenhilfe-Ratgeber",
+    "description": "Pannenhilfe auf der A2 Südautobahn: Was tun im Notfall? Schritt-für-Schritt-Anleitung, Sicherheitstipps und warum Sie den lokalen Abschleppdienst aus Sollenau wählen sollten.",
+    "date": "2025-12-23T00:00:00.000Z",
+    "updated": "2025-12-23T00:00:00.000Z",
+    "locale": "de",
+    "cluster": "roadside",
+    "slug": "awaria-na-a2-pomoc-drogowa",
+    "translationKey": "awaria-a2",
+    "heroImage": "/images/blog/abschleppdienst-a2.webp",
+    "tags": [
+      "Pannenhilfe",
+      "Abschleppdienst",
+      "A2",
+      "Sicherheit"
+    ],
+    "faq": [
+      {
+        "q": "Bieten Sie nachts Pannenhilfe an?",
+        "a": "Ja, unser 24/7 Service ist 365 Tage im Jahr im Einsatz, auch an Feiertagen."
+      },
+      {
+        "q": "Kann ich das Abschleppen mit Karte bezahlen?",
+        "a": "Ja, wir akzeptieren Bargeld sowie alle gängigen Debit- und Kreditkarten direkt beim Fahrer."
+      },
+      {
+        "q": "Wie schnell sind Sie auf der A2?",
+        "a": "Dank unseres Standorts in Sollenau sind wir je nach Verkehrslage in 15-30 Minuten auf der A2."
+      }
+    ],
+    "draft": false,
+    "featured": true,
+    "author": "Paweł Bogusław Ferdynus",
+    "code": "const{Fragment:e,jsx:n,jsxs:r}=arguments[0];function _createMdxContent(i){const t={a:\"a\",blockquote:\"blockquote\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...i.components};return r(e,{children:[n(t.h2,{id:\"die-ersten-5-minuten-nach-der-panne--sicherheitsanleitung\",children:n(t.a,{href:\"#die-ersten-5-minuten-nach-der-panne--sicherheitsanleitung\",children:\"Die ersten 5 Minuten nach der Panne – Sicherheitsanleitung\"})}),\"\\n\",n(t.p,{children:\"Eine Panne auf der A2 (Südautobahn) ist eine stressige Situation. Es ist wichtig, Ruhe zu bewahren und die Sicherheitsregeln zu befolgen. Der Verkehr auf dieser Strecke ist dicht, daher zählt jede Sekunde für Ihre Sicherheit und die anderer Verkehrsteilnehmer.\"}),\"\\n\",r(t.ol,{children:[\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Warnblinkanlage einschalten\"}),\" – Signalisieren Sie anderen Fahrern sofort das Problem.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Auf den Pannenstreifen fahren\"}),\" – Halten Sie das Fahrzeug wenn möglich so nah wie möglich an der Leitplanke an.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Warnweste anlegen\"}),\" – In Österreich ist dies für jede Person, die aussteigt, gesetzlich vorgeschrieben.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Fahrzeug sicher verlassen\"}),\" – Immer zur Beifahrerseite (rechte Seite), niemals zur Fahrbahn hin!\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Warndreieck aufstellen\"}),\" – Mindestens 150 Meter hinter dem Fahrzeug.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Hinter der Leitplanke Schutz suchen\"}),\" – Warten Sie niemals im Auto auf den Pannendienst.\"]}),\"\\n\"]}),\"\\n\",r(t.blockquote,{children:[\"\\n\",r(t.p,{children:[\"[!IMPORTANT]\\n\",n(t.strong,{children:\"Sicherheit geht vor:\"}),\" Versuchen Sie nicht, das Auto auf dem Fahrstreifen zu reparieren. Wenn das Auto auf der linken Spur stehen geblieben ist, schalten Sie den Warnblinker ein und verlassen Sie das Fahrzeug, sobald es sicher ist, um auf den Mittelstreifen oder hinter die Leitplanke zu gelangen.\"]}),\"\\n\"]}),\"\\n\",n(t.h2,{id:\"warum-einen-lokalen-abschleppdienst-aus-sollenau-wählen\",children:n(t.a,{href:\"#warum-einen-lokalen-abschleppdienst-aus-sollenau-wählen\",children:\"Warum einen lokalen Abschleppdienst aus Sollenau wählen?\"})}),\"\\n\",n(t.p,{children:\"Als seit 2018 lokal tätiges Unternehmen kennen wir jeden Kilometer der A2 im Raum Wiener Neustadt und Baden. Unser stützpunkt in Sollenau ermöglicht eine blitzschnelle Reaktion. Im Gegensatz zu großen Konzernen sprechen Sie bei uns direkt mit dem Fahrer, der zu Ihnen kommt.\"}),\"\\n\",n(t.h3,{id:\"unsere-vorteile\",children:n(t.a,{href:\"#unsere-vorteile\",children:\"Unsere Vorteile:\"})}),\"\\n\",r(t.ul,{children:[\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Schnelle Anfahrt:\"}),\" Direkte Auffahrt auf die A2.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Sprache:\"}),\" Betreuung auf Deutsch, Polnisch und Englisch – keine Sprachbarrieren in Stresssituationen.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"24/7 Verfügbarkeit:\"}),\" Echte Rund-um-die-Uhr-Bereitschaft, auch an Feiertagen.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Transparenz:\"}),\" Klare Preise, die vor der Anfahrt vereinbart werden.\"]}),\"\\n\"]}),\"\\n\",n(t.h2,{id:\"leistungsvergleich-pannenhilfe-vs-abschleppdienst\",children:n(t.a,{href:\"#leistungsvergleich-pannenhilfe-vs-abschleppdienst\",children:\"Leistungsvergleich: Pannenhilfe vs. Abschleppdienst\"})}),\"\\n\",n(t.p,{children:\"Kunden fragen oft, ob sie abgeschleppt werden müssen oder ob Hilfe vor Ort ausreicht. Hier ein kurzer Leitfaden:\"}),\"\\n\",r(t.table,{children:[n(t.thead,{children:r(t.tr,{children:[n(t.th,{style:{textAlign:\"left\"},children:\"Service\"}),n(t.th,{style:{textAlign:\"left\"},children:\"Wann wählen?\"}),n(t.th,{style:{textAlign:\"left\"},children:\"Beispielmaßnahme\"})]})}),r(t.tbody,{children:[r(t.tr,{children:[n(t.td,{style:{textAlign:\"left\"},children:n(t.strong,{children:\"Pannenhilfe (Hilfe vor Ort)\"})}),n(t.td,{style:{textAlign:\"left\"},children:\"Kleiner Defekt, leere Batterie, platter Reifen\"}),n(t.td,{style:{textAlign:\"left\"},children:\"Starthilfe, Radwechsel, Kraftstofflieferung, kleine elektrische Reparaturen\"})]}),r(t.tr,{children:[n(t.td,{style:{textAlign:\"left\"},children:n(t.strong,{children:\"Abschleppdienst\"})}),n(t.td,{style:{textAlign:\"left\"},children:\"Schwerer Motor-/Getriebeschaden, Unfall, Lenkungsdefekt\"}),n(t.td,{style:{textAlign:\"left\"},children:\"Abschleppen zur Basis in Sollenau, zur Partnerwerkstatt oder nach Polen (internationaler Transport)\"})]})]})]}),\"\\n\",n(t.h3,{id:\"wann-reicht-starthilfe\",children:n(t.a,{href:\"#wann-reicht-starthilfe\",children:\"Wann reicht Starthilfe?\"})}),\"\\n\",n(t.p,{children:'Wenn Ihr Auto nach einem Stopp nicht mehr anspringt und der Anlasser nur \"klickt\", ist wahrscheinlich die Batterie leer. In dieser Situation kommt unser mobiler Service und startet das Auto mit einem professionellen Booster, wobei auch die Lichtmaschinenladung geprüft wird. Dies ist eine günstigere und schnellere Option als Abschleppen.'}),\"\\n\",n(t.h2,{id:\"was-sollten-sie-vor-dem-anruf-vorbereiten\",children:n(t.a,{href:\"#was-sollten-sie-vor-dem-anruf-vorbereiten\",children:\"Was sollten Sie vor dem Anruf vorbereiten?\"})}),\"\\n\",n(t.p,{children:\"Damit wir Sie so schnell wie möglich erreichen können, halten Sie bitte folgende Informationen bereit:\"}),\"\\n\",r(t.ul,{children:[\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Genaue Position:\"}),\" Kilometernummer vom Begrenzungspfosten (z.B. A2 km 34,5 Richtung Graz).\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Marke und Modell des Autos:\"}),\" Und Farbe – so können wir Sie leichter erkennen.\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Fehlerbeschreibung:\"}),\" Was ist passiert? Sind die Räder blockiert? (Wichtig für das Aufladen auf die Ladefläche).\"]}),\"\\n\",r(t.li,{children:[n(t.strong,{children:\"Anzahl der Passagiere:\"}),\" Benötigen Sie Transport für Ihre Familie?\"]}),\"\\n\"]}),\"\\n\",n(t.h2,{id:\"zusammenfassung\",children:n(t.a,{href:\"#zusammenfassung\",children:\"Zusammenfassung\"})}),\"\\n\",r(t.p,{children:[\"Eine Panne auf der A2 muss nicht das Ende Ihrer Reise bedeuten. Mit professioneller Hilfe von \",n(t.strong,{children:\"Pablo e.U.\"}),\" kehren Sie schnell auf die Straße zurück oder erreichen sicher Ihr Ziel. Speichern Sie unsere Nummer noch heute – besser man hat sie und braucht sie nicht, als man braucht sie und hat sie nicht.\"]}),\"\\n\",n(t.p,{children:n(t.strong,{children:\"Brauchen Sie jetzt Hilfe? Klicken Sie unten!\"})})]})}return{default:function(e={}){const{wrapper:r}=e.components||{};return r?n(r,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "raw": "## Die ersten 5 Minuten nach der Panne – Sicherheitsanleitung\n\nEine Panne auf der A2 (Südautobahn) ist eine stressige Situation. Es ist wichtig, Ruhe zu bewahren und die Sicherheitsregeln zu befolgen. Der Verkehr auf dieser Strecke ist dicht, daher zählt jede Sekunde für Ihre Sicherheit und die anderer Verkehrsteilnehmer.\n\n1.  **Warnblinkanlage einschalten** – Signalisieren Sie anderen Fahrern sofort das Problem.\n2.  **Auf den Pannenstreifen fahren** – Halten Sie das Fahrzeug wenn möglich so nah wie möglich an der Leitplanke an.\n3.  **Warnweste anlegen** – In Österreich ist dies für jede Person, die aussteigt, gesetzlich vorgeschrieben.\n4.  **Fahrzeug sicher verlassen** – Immer zur Beifahrerseite (rechte Seite), niemals zur Fahrbahn hin!\n5.  **Warndreieck aufstellen** – Mindestens 150 Meter hinter dem Fahrzeug.\n6.  **Hinter der Leitplanke Schutz suchen** – Warten Sie niemals im Auto auf den Pannendienst.\n\n> [!IMPORTANT]\n> **Sicherheit geht vor:** Versuchen Sie nicht, das Auto auf dem Fahrstreifen zu reparieren. Wenn das Auto auf der linken Spur stehen geblieben ist, schalten Sie den Warnblinker ein und verlassen Sie das Fahrzeug, sobald es sicher ist, um auf den Mittelstreifen oder hinter die Leitplanke zu gelangen.\n\n## Warum einen lokalen Abschleppdienst aus Sollenau wählen?\n\nAls seit 2018 lokal tätiges Unternehmen kennen wir jeden Kilometer der A2 im Raum Wiener Neustadt und Baden. Unser stützpunkt in Sollenau ermöglicht eine blitzschnelle Reaktion. Im Gegensatz zu großen Konzernen sprechen Sie bei uns direkt mit dem Fahrer, der zu Ihnen kommt.\n\n### Unsere Vorteile:\n*   **Schnelle Anfahrt:** Direkte Auffahrt auf die A2.\n*   **Sprache:** Betreuung auf Deutsch, Polnisch und Englisch – keine Sprachbarrieren in Stresssituationen.\n*   **24/7 Verfügbarkeit:** Echte Rund-um-die-Uhr-Bereitschaft, auch an Feiertagen.\n*   **Transparenz:** Klare Preise, die vor der Anfahrt vereinbart werden.\n\n## Leistungsvergleich: Pannenhilfe vs. Abschleppdienst\n\nKunden fragen oft, ob sie abgeschleppt werden müssen oder ob Hilfe vor Ort ausreicht. Hier ein kurzer Leitfaden:\n\n| Service | Wann wählen? | Beispielmaßnahme |\n| :--- | :--- | :--- |\n| **Pannenhilfe (Hilfe vor Ort)** | Kleiner Defekt, leere Batterie, platter Reifen | Starthilfe, Radwechsel, Kraftstofflieferung, kleine elektrische Reparaturen |\n| **Abschleppdienst** | Schwerer Motor-/Getriebeschaden, Unfall, Lenkungsdefekt | Abschleppen zur Basis in Sollenau, zur Partnerwerkstatt oder nach Polen (internationaler Transport) |\n\n### Wann reicht Starthilfe?\nWenn Ihr Auto nach einem Stopp nicht mehr anspringt und der Anlasser nur \"klickt\", ist wahrscheinlich die Batterie leer. In dieser Situation kommt unser mobiler Service und startet das Auto mit einem professionellen Booster, wobei auch die Lichtmaschinenladung geprüft wird. Dies ist eine günstigere und schnellere Option als Abschleppen.\n\n## Was sollten Sie vor dem Anruf vorbereiten?\n\nDamit wir Sie so schnell wie möglich erreichen können, halten Sie bitte folgende Informationen bereit:\n\n*   **Genaue Position:** Kilometernummer vom Begrenzungspfosten (z.B. A2 km 34,5 Richtung Graz).\n*   **Marke und Modell des Autos:** Und Farbe – so können wir Sie leichter erkennen.\n*   **Fehlerbeschreibung:** Was ist passiert? Sind die Räder blockiert? (Wichtig für das Aufladen auf die Ladefläche).\n*   **Anzahl der Passagiere:** Benötigen Sie Transport für Ihre Familie?\n\n## Zusammenfassung\n\nEine Panne auf der A2 muss nicht das Ende Ihrer Reise bedeuten. Mit professioneller Hilfe von **Pablo e.U.** kehren Sie schnell auf die Straße zurück oder erreichen sicher Ihr Ziel. Speichern Sie unsere Nummer noch heute – besser man hat sie und braucht sie nicht, als man braucht sie und hat sie nicht.\n\n**Brauchen Sie jetzt Hilfe? Klicken Sie unten!**",
+    "categorySlug": "pannenhilfe",
+    "url": "/ratgeber/awaria-na-a2-pomoc-drogowa",
+    "readingTime": 3,
+    "headings": [
+      {
+        "depth": 2,
+        "text": "Warum einen lokalen Abschleppdienst aus Sollenau wählen?",
+        "slug": "warum-einen-lokalen-abschleppdienst-aus-sollenau-whlen"
+      },
+      {
+        "depth": 3,
+        "text": "Unsere Vorteile:",
+        "slug": "unsere-vorteile"
+      },
+      {
+        "depth": 2,
+        "text": "Leistungsvergleich: Pannenhilfe vs. Abschleppdienst",
+        "slug": "leistungsvergleich-pannenhilfe-vs-abschleppdienst"
+      },
+      {
+        "depth": 3,
+        "text": "Wann reicht Starthilfe?",
+        "slug": "wann-reicht-starthilfe"
+      },
+      {
+        "depth": 2,
+        "text": "Was sollten Sie vor dem Anruf vorbereiten?",
+        "slug": "was-sollten-sie-vor-dem-anruf-vorbereiten"
+      },
+      {
+        "depth": 2,
+        "text": "Zusammenfassung",
+        "slug": "zusammenfassung"
+      }
+    ]
+  },
+  {
+    "title": "Awaria na A2 Südautobahn? Kompletny przewodnik po pomocy drogowej 24/7",
+    "description": "Pomoc drogowa na autostradzie A2 Südautobahn: Co zrobić w razie awarii? Instrukcja krok po kroku oraz dlaczego warto wybrać lokalną pomoc drogową z Sollenau.",
+    "date": "2025-12-23T00:00:00.000Z",
+    "updated": "2025-12-23T00:00:00.000Z",
+    "locale": "pl",
+    "cluster": "roadside",
+    "slug": "awaria-na-a2-pomoc-drogowa",
+    "translationKey": "awaria-a2",
+    "heroImage": "/images/blog/abschleppdienst-a2.webp",
+    "tags": [
+      "Pomoc Drogowa",
+      "Holowanie",
+      "A2",
+      "Bezpieczeństwo"
+    ],
+    "faq": [
+      {
+        "q": "Czy oferujecie pomoc drogową w nocy?",
+        "a": "Tak, nasz serwis 24/7 działa 365 dni w roku, również w święta."
+      },
+      {
+        "q": "Czy mogę zapłacić kartą za holowanie?",
+        "a": "Tak, akceptujemy gotówkę oraz wszystkie popularne karty debetowe i kredytowe bezpośrednio u kierowcy lawety."
+      },
+      {
+        "q": "Jak szybko dojeżdżacie na A2?",
+        "a": "Dzięki lokalizacji w Sollenau jesteśmy na A2 w ciągu 15-30 minut w zależności od sytuacji na drodze."
+      }
+    ],
+    "draft": false,
+    "featured": true,
+    "author": "Paweł Bogusław Ferdynus",
+    "code": "const{Fragment:e,jsx:a,jsxs:n}=arguments[0];function _createMdxContent(i){const o={a:\"a\",blockquote:\"blockquote\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...i.components};return n(e,{children:[a(o.h2,{id:\"pierwsze-5-minut-po-awarii--instrukcja-bezpieczeństwa\",children:a(o.a,{href:\"#pierwsze-5-minut-po-awarii--instrukcja-bezpieczeństwa\",children:\"Pierwsze 5 minut po awarii – instrukcja bezpieczeństwa\"})}),\"\\n\",a(o.p,{children:\"Awaria na autostradzie A2 (Südautobahn) to stresująca sytuacja. Ważne jest, aby zachować spokój i postępować zgodnie z zasadami bezpieczeństwa. Ruch na tej trasie jest intensywny, dlatego każda sekunda ma znaczenie dla Twojego bezpieczeństwa i bezpieczeństwa innych uczestników ruchu.\"}),\"\\n\",n(o.ol,{children:[\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Włącz światła awaryjne\"}),\" – natychmiast zasygnalizuj innym kierowcom problem.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Zjedź na pas awaryjny\"}),\" – jeśli to możliwe, zatrzymaj auto jak najbliżej bariery.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Załóż kamizelkę odblaskową\"}),\" – w Austrii jest to obowiązkowe dla każdego, kto wysiada z auta.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Wyjdź z pojazdu bezpiecznie\"}),\" – zawsze od strony pasażera (prawej strony), nigdy na jezdnię!\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Ustaw trójkąt ostrzegawczy\"}),\" – co najmniej 150 metrów za pojazdem.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Schroń się za barierą energochłonną\"}),\" – nigdy nie czekaj w aucie na pomoc drogową.\"]}),\"\\n\"]}),\"\\n\",n(o.blockquote,{children:[\"\\n\",n(o.p,{children:[\"[!IMPORTANT]\\n\",a(o.strong,{children:\"Bezpieczeństwo przede wszystkim:\"}),\" Nie próbuj naprawiać auta na pasie ruchu. Jeśli auto stanęło na lewym pasie, włącz awaryjne i opuść pojazd, gdy tylko będzie to bezpieczne, uciekając na pas zieleni lub za barierę.\"]}),\"\\n\"]}),\"\\n\",a(o.h2,{id:\"dlaczego-warto-wybrać-lokalną-pomoc-drogową-z-sollenau\",children:a(o.a,{href:\"#dlaczego-warto-wybrać-lokalną-pomoc-drogową-z-sollenau\",children:\"Dlaczego warto wybrać lokalną pomoc drogową z Sollenau?\"})}),\"\\n\",a(o.p,{children:\"Jako firma działająca lokalnie od 2018 roku, znamy każdy kilometr A2 w rejonie Wiener Neustadt i Baden. Nasza baza w Sollenau pozwala na błyskawiczną reakcję. W przeciwieństwie do dużych korporacji, u nas rozmawiasz bezpośrednio z kierowcą, który do Ciebie jedzie.\"}),\"\\n\",a(o.h3,{id:\"nasze-atuty\",children:a(o.a,{href:\"#nasze-atuty\",children:\"Nasze atuty:\"})}),\"\\n\",n(o.ul,{children:[\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Szybki dojazd:\"}),\" Bezpośredni wjazd na A2.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Język:\"}),\" Obsługa w języku polskim i niemieckim – bez barier językowych w stresującej sytuacji.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"24/7 Dostępność:\"}),\" Prawdziwe całodobowe dyżury, również w święta.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Transparentność:\"}),\" Jasne ceny ustalone przed przyjazdem.\"]}),\"\\n\"]}),\"\\n\",a(o.h2,{id:\"porównanie-usług-pomoc-na-miejscu-vs-holowanie\",children:a(o.a,{href:\"#porównanie-usług-pomoc-na-miejscu-vs-holowanie\",children:\"Porównanie usług: Pomoc na miejscu vs. Holowanie\"})}),\"\\n\",a(o.p,{children:\"Często klienci pytają, czy potrzebują holowania, czy wystarczy pomoc na miejscu. Oto krótki przewodnik:\"}),\"\\n\",n(o.table,{children:[a(o.thead,{children:n(o.tr,{children:[a(o.th,{style:{textAlign:\"left\"},children:\"Usługa\"}),a(o.th,{style:{textAlign:\"left\"},children:\"Kiedy wybrać?\"}),a(o.th,{style:{textAlign:\"left\"},children:\"Przykładowe działanie\"})]})}),n(o.tbody,{children:[n(o.tr,{children:[a(o.td,{style:{textAlign:\"left\"},children:a(o.strong,{children:\"Pannenhilfe (Pomoc na miejscu)\"})}),a(o.td,{style:{textAlign:\"left\"},children:\"Mała usterka, rozładowany akumulator, przebita opona\"}),a(o.td,{style:{textAlign:\"left\"},children:\"Odpalanie z kabli (Starthilfe), wymiana koła, dowóz paliwa, drobne naprawy elektryczne\"})]}),n(o.tr,{children:[a(o.td,{style:{textAlign:\"left\"},children:a(o.strong,{children:\"Abschleppdienst (Holowanie)\"})}),a(o.td,{style:{textAlign:\"left\"},children:\"Poważna awaria silnika, skrzyni biegów, wypadek, uszkodzenie układu kierowniczego\"}),a(o.td,{style:{textAlign:\"left\"},children:\"Holowanie lawetą do bazy w Sollenau, do warsztatu partnerskiego lub do Polski (transport międzynarodowy)\"})]})]})]}),\"\\n\",a(o.h3,{id:\"kiedy-wystarczy-odpalanie-z-kabli\",children:a(o.a,{href:\"#kiedy-wystarczy-odpalanie-z-kabli\",children:\"Kiedy wystarczy odpalanie z kabli?\"})}),\"\\n\",a(o.p,{children:'Jeśli Twoje auto nie odpala po postoju, a rozrusznik tylko \"cyka\", prawdopodobnie padł akumulator. W takiej sytuacji nasz serwis mobilny przyjedzie i uruchomi auto profesjonalnym boosterem, sprawdzając również ładowanie alternatora. To tańsza i szybsza opcja niż holowanie.'}),\"\\n\",a(o.h2,{id:\"co-przygotować-przed-telefonem-po-pomoc\",children:a(o.a,{href:\"#co-przygotować-przed-telefonem-po-pomoc\",children:\"Co przygotować przed telefonem po pomoc?\"})}),\"\\n\",a(o.p,{children:\"Abyśmy mogli jak najszybciej do Ciebie dotrzeć, przygotuj następujące informacje:\"}),\"\\n\",n(o.ul,{children:[\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Dokładna lokalizacja:\"}),\" Numer kilometra z słupka pikietażowego (np. A2 km 34,5 kierunek Graz).\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Marka i model auta:\"}),\" Oraz kolor – łatwiej nas zauważysz.\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Opis usterki:\"}),\" Co się stało? Czy koła są zablokowane? (Ważne przy wciąganiu na lawetę).\"]}),\"\\n\",n(o.li,{children:[a(o.strong,{children:\"Liczba pasażerów:\"}),\" Czy potrzebujesz transportu dla rodziny?\"]}),\"\\n\"]}),\"\\n\",a(o.h2,{id:\"podsumowanie\",children:a(o.a,{href:\"#podsumowanie\",children:\"Podsumowanie\"})}),\"\\n\",n(o.p,{children:[\"Awaria na A2 nie musi oznaczać końca podróży. Z profesjonalną pomocą \",a(o.strong,{children:\"Pablo e.U.\"}),\" szybko wrócisz na trasę lub bezpiecznie dotrzesz do celu. Zapisz nasz numer już dziś – lepiej go mieć i nie potrzebować, niż potrzebować i nie mieć.\"]}),\"\\n\",a(o.p,{children:a(o.strong,{children:\"Potrzebujesz pomocy teraz? Kliknij poniżej!\"})})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?a(n,{...e,children:a(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "raw": "## Pierwsze 5 minut po awarii – instrukcja bezpieczeństwa\n\nAwaria na autostradzie A2 (Südautobahn) to stresująca sytuacja. Ważne jest, aby zachować spokój i postępować zgodnie z zasadami bezpieczeństwa. Ruch na tej trasie jest intensywny, dlatego każda sekunda ma znaczenie dla Twojego bezpieczeństwa i bezpieczeństwa innych uczestników ruchu.\n\n1. **Włącz światła awaryjne** – natychmiast zasygnalizuj innym kierowcom problem.\n2. **Zjedź na pas awaryjny** – jeśli to możliwe, zatrzymaj auto jak najbliżej bariery.\n3. **Załóż kamizelkę odblaskową** – w Austrii jest to obowiązkowe dla każdego, kto wysiada z auta.\n4. **Wyjdź z pojazdu bezpiecznie** – zawsze od strony pasażera (prawej strony), nigdy na jezdnię!\n5. **Ustaw trójkąt ostrzegawczy** – co najmniej 150 metrów za pojazdem.\n6. **Schroń się za barierą energochłonną** – nigdy nie czekaj w aucie na pomoc drogową.\n\n> [!IMPORTANT]\n> **Bezpieczeństwo przede wszystkim:** Nie próbuj naprawiać auta na pasie ruchu. Jeśli auto stanęło na lewym pasie, włącz awaryjne i opuść pojazd, gdy tylko będzie to bezpieczne, uciekając na pas zieleni lub za barierę.\n\n## Dlaczego warto wybrać lokalną pomoc drogową z Sollenau?\n\nJako firma działająca lokalnie od 2018 roku, znamy każdy kilometr A2 w rejonie Wiener Neustadt i Baden. Nasza baza w Sollenau pozwala na błyskawiczną reakcję. W przeciwieństwie do dużych korporacji, u nas rozmawiasz bezpośrednio z kierowcą, który do Ciebie jedzie.\n\n### Nasze atuty:\n*   **Szybki dojazd:** Bezpośredni wjazd na A2.\n*   **Język:** Obsługa w języku polskim i niemieckim – bez barier językowych w stresującej sytuacji.\n*   **24/7 Dostępność:** Prawdziwe całodobowe dyżury, również w święta.\n*   **Transparentność:** Jasne ceny ustalone przed przyjazdem.\n\n## Porównanie usług: Pomoc na miejscu vs. Holowanie\n\nCzęsto klienci pytają, czy potrzebują holowania, czy wystarczy pomoc na miejscu. Oto krótki przewodnik:\n\n| Usługa | Kiedy wybrać? | Przykładowe działanie |\n| :--- | :--- | :--- |\n| **Pannenhilfe (Pomoc na miejscu)** | Mała usterka, rozładowany akumulator, przebita opona | Odpalanie z kabli (Starthilfe), wymiana koła, dowóz paliwa, drobne naprawy elektryczne |\n| **Abschleppdienst (Holowanie)** | Poważna awaria silnika, skrzyni biegów, wypadek, uszkodzenie układu kierowniczego | Holowanie lawetą do bazy w Sollenau, do warsztatu partnerskiego lub do Polski (transport międzynarodowy) |\n\n### Kiedy wystarczy odpalanie z kabli?\nJeśli Twoje auto nie odpala po postoju, a rozrusznik tylko \"cyka\", prawdopodobnie padł akumulator. W takiej sytuacji nasz serwis mobilny przyjedzie i uruchomi auto profesjonalnym boosterem, sprawdzając również ładowanie alternatora. To tańsza i szybsza opcja niż holowanie.\n\n## Co przygotować przed telefonem po pomoc?\n\nAbyśmy mogli jak najszybciej do Ciebie dotrzeć, przygotuj następujące informacje:\n*   **Dokładna lokalizacja:** Numer kilometra z słupka pikietażowego (np. A2 km 34,5 kierunek Graz).\n*   **Marka i model auta:** Oraz kolor – łatwiej nas zauważysz.\n*   **Opis usterki:** Co się stało? Czy koła są zablokowane? (Ważne przy wciąganiu na lawetę).\n*   **Liczba pasażerów:** Czy potrzebujesz transportu dla rodziny?\n\n## Podsumowanie\n\nAwaria na A2 nie musi oznaczać końca podróży. Z profesjonalną pomocą **Pablo e.U.** szybko wrócisz na trasę lub bezpiecznie dotrzesz do celu. Zapisz nasz numer już dziś – lepiej go mieć i nie potrzebować, niż potrzebować i nie mieć.\n\n**Potrzebujesz pomocy teraz? Kliknij poniżej!**",
+    "categorySlug": "pomoc-drogowa",
+    "url": "/pl/poradnik/awaria-na-a2-pomoc-drogowa",
+    "readingTime": 3,
+    "headings": [
+      {
+        "depth": 2,
+        "text": "Dlaczego warto wybrać lokalną pomoc drogową z Sollenau?",
+        "slug": "dlaczego-warto-wybra-lokaln-pomoc-drogow-z-sollenau"
+      },
+      {
+        "depth": 3,
+        "text": "Nasze atuty:",
+        "slug": "nasze-atuty"
+      },
+      {
+        "depth": 2,
+        "text": "Porównanie usług: Pomoc na miejscu vs. Holowanie",
+        "slug": "porwnanie-usug-pomoc-na-miejscu-vs-holowanie"
+      },
+      {
+        "depth": 3,
+        "text": "Kiedy wystarczy odpalanie z kabli?",
+        "slug": "kiedy-wystarczy-odpalanie-z-kabli"
+      },
+      {
+        "depth": 2,
+        "text": "Co przygotować przed telefonem po pomoc?",
+        "slug": "co-przygotowa-przed-telefonem-po-pomoc"
+      },
+      {
+        "depth": 2,
+        "text": "Podsumowanie",
+        "slug": "podsumowanie"
+      }
+    ]
+  },
+  {
+    "title": "Breakdown on the A2 Südautobahn? Complete Guide to 24/7 Roadside Assistance",
+    "description": "Roadside assistance on the A2: What to do in case of a breakdown? Step-by-step guide, safety tips, and why you should choose a local towing service from Sollenau.",
+    "date": "2025-12-23T00:00:00.000Z",
+    "updated": "2025-12-23T00:00:00.000Z",
+    "locale": "en",
+    "cluster": "roadside",
+    "slug": "breakdown-a2-roadside-assistance",
+    "translationKey": "awaria-a2",
+    "heroImage": "/images/blog/abschleppdienst-a2.webp",
+    "tags": [
+      "Roadside Assistance",
+      "Towing",
+      "A2",
+      "Safety"
+    ],
+    "faq": [
+      {
+        "q": "Do you offer roadside assistance at night?",
+        "a": "Yes, our 24/7 service operates 365 days a year, including holidays."
+      },
+      {
+        "q": "Can I pay by card for towing?",
+        "a": "Yes, we accept cash as well as all popular debit and credit cards directly with the tow truck driver."
+      },
+      {
+        "q": "How fast do you arrive on the A2?",
+        "a": "Thanks to our location in Sollenau, we are on the A2 within 15-30 minutes depending on traffic."
+      }
+    ],
+    "draft": false,
+    "featured": true,
+    "author": "Paweł Bogusław Ferdynus",
+    "code": "const{Fragment:e,jsx:r,jsxs:n}=arguments[0];function _createMdxContent(t){const i={a:\"a\",blockquote:\"blockquote\",h2:\"h2\",h3:\"h3\",li:\"li\",ol:\"ol\",p:\"p\",strong:\"strong\",table:\"table\",tbody:\"tbody\",td:\"td\",th:\"th\",thead:\"thead\",tr:\"tr\",ul:\"ul\",...t.components};return n(e,{children:[r(i.h2,{id:\"first-5-minutes-after-a-breakdown--safety-guide\",children:r(i.a,{href:\"#first-5-minutes-after-a-breakdown--safety-guide\",children:\"First 5 Minutes After a Breakdown – Safety Guide\"})}),\"\\n\",r(i.p,{children:\"A breakdown on the A2 motorway (Südautobahn) is a stressful situation. It is important to stay calm and follow safety rules. Traffic on this route is heavy, so every second counts for your safety and the safety of other road users.\"}),\"\\n\",n(i.ol,{children:[\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Turn on hazard lights\"}),\" – signal the problem to other drivers immediately.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Move to the hard shoulder\"}),\" – if possible, stop the car as close to the barrier as possible.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Put on a reflective vest\"}),\" – in Austria, this is mandatory for anyone exiting the car.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Exit the vehicle safely\"}),\" – always from the passenger side (right side), never onto the roadway!\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Set up the warning triangle\"}),\" – at least 150 meters behind the vehicle.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Take cover behind the crash barrier\"}),\" – never wait inside the car for roadside assistance.\"]}),\"\\n\"]}),\"\\n\",n(i.blockquote,{children:[\"\\n\",n(i.p,{children:[\"[!IMPORTANT]\\n\",r(i.strong,{children:\"Safety First:\"}),\" Do not try to repair the car on the driving lane. If the car stopped in the left lane, turn on hazards and leave the vehicle as soon as it is safe, escaping to the median strip or behind the barrier.\"]}),\"\\n\"]}),\"\\n\",r(i.h2,{id:\"why-choose-a-local-towing-service-from-sollenau\",children:r(i.a,{href:\"#why-choose-a-local-towing-service-from-sollenau\",children:\"Why Choose a Local Towing Service from Sollenau?\"})}),\"\\n\",r(i.p,{children:\"As a locally operating company since 2018, we know every kilometer of the A2 in the Wiener Neustadt and Baden area. Our base in Sollenau allows for immediate response. Unlike large corporations, with us you speak directly to the driver who is coming to you.\"}),\"\\n\",r(i.h3,{id:\"our-advantages\",children:r(i.a,{href:\"#our-advantages\",children:\"Our Advantages:\"})}),\"\\n\",n(i.ul,{children:[\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Fast Arrival:\"}),\" Direct access to the A2.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Languages:\"}),\" Service in Polish, German, and English – no language barriers in a stressful situation.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"24/7 Availability:\"}),\" Real round-the-clock duty, including holidays.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Transparency:\"}),\" Clear prices agreed upon before arrival.\"]}),\"\\n\"]}),\"\\n\",r(i.h2,{id:\"service-comparison-roadside-assistance-vs-towing\",children:r(i.a,{href:\"#service-comparison-roadside-assistance-vs-towing\",children:\"Service Comparison: Roadside Assistance vs. Towing\"})}),\"\\n\",r(i.p,{children:\"Customers often ask if they need towing or if on-site help is sufficient. Here is a short guide:\"}),\"\\n\",n(i.table,{children:[r(i.thead,{children:n(i.tr,{children:[r(i.th,{style:{textAlign:\"left\"},children:\"Service\"}),r(i.th,{style:{textAlign:\"left\"},children:\"When to choose?\"}),r(i.th,{style:{textAlign:\"left\"},children:\"Example action\"})]})}),n(i.tbody,{children:[n(i.tr,{children:[r(i.td,{style:{textAlign:\"left\"},children:r(i.strong,{children:\"Roadside Assistance\"})}),r(i.td,{style:{textAlign:\"left\"},children:\"Minor fault, dead battery, flat tire\"}),r(i.td,{style:{textAlign:\"left\"},children:\"Jump start, wheel change, fuel delivery, minor electrical repairs\"})]}),n(i.tr,{children:[r(i.td,{style:{textAlign:\"left\"},children:r(i.strong,{children:\"Towing Service\"})}),r(i.td,{style:{textAlign:\"left\"},children:\"Serious engine/gearbox failure, accident, steering damage\"}),r(i.td,{style:{textAlign:\"left\"},children:\"Towing to base in Sollenau, partner workshop, or international transport\"})]})]})]}),\"\\n\",r(i.h3,{id:\"when-is-a-jump-start-sufficient\",children:r(i.a,{href:\"#when-is-a-jump-start-sufficient\",children:\"When is a Jump Start Sufficient?\"})}),\"\\n\",r(i.p,{children:\"If your car doesn't start after a stop, and the starter only clicks, the battery is likely dead. In this situation, our mobile service will arrive and start the car with a professional booster, also checking the alternator charging. This is a cheaper and faster option than towing.\"}),\"\\n\",r(i.h2,{id:\"what-to-prepare-before-calling-for-help\",children:r(i.a,{href:\"#what-to-prepare-before-calling-for-help\",children:\"What to Prepare Before Calling for Help?\"})}),\"\\n\",r(i.p,{children:\"To help us reach you as quickly as possible, prepare the following information:\"}),\"\\n\",n(i.ul,{children:[\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Exact Location:\"}),\" Kilometer number from the marker post (e.g., A2 km 34.5 direction Graz).\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Car Make and Model:\"}),\" And color – it will be easier for us to spot you.\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Fault Description:\"}),\" What happened? Are wheels locked? (Important for winching onto the truck).\"]}),\"\\n\",n(i.li,{children:[r(i.strong,{children:\"Number of Passengers:\"}),\" Do you need transport for your family?\"]}),\"\\n\"]}),\"\\n\",r(i.h2,{id:\"summary\",children:r(i.a,{href:\"#summary\",children:\"Summary\"})}),\"\\n\",n(i.p,{children:[\"A breakdown on the A2 doesn't have to mean the end of your trip. With professional help from \",r(i.strong,{children:\"Pablo e.U.\"}),\", you will quickly return to the road or safely reach your destination. Save our number today – better to have it and not need it, than need it and not have it.\"]}),\"\\n\",r(i.p,{children:r(i.strong,{children:\"Need help now? Click below!\"})})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?r(n,{...e,children:r(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "raw": "## First 5 Minutes After a Breakdown – Safety Guide\n\nA breakdown on the A2 motorway (Südautobahn) is a stressful situation. It is important to stay calm and follow safety rules. Traffic on this route is heavy, so every second counts for your safety and the safety of other road users.\n\n1. **Turn on hazard lights** – signal the problem to other drivers immediately.\n2. **Move to the hard shoulder** – if possible, stop the car as close to the barrier as possible.\n3. **Put on a reflective vest** – in Austria, this is mandatory for anyone exiting the car.\n4. **Exit the vehicle safely** – always from the passenger side (right side), never onto the roadway!\n5. **Set up the warning triangle** – at least 150 meters behind the vehicle.\n6. **Take cover behind the crash barrier** – never wait inside the car for roadside assistance.\n\n> [!IMPORTANT]\n> **Safety First:** Do not try to repair the car on the driving lane. If the car stopped in the left lane, turn on hazards and leave the vehicle as soon as it is safe, escaping to the median strip or behind the barrier.\n\n## Why Choose a Local Towing Service from Sollenau?\n\nAs a locally operating company since 2018, we know every kilometer of the A2 in the Wiener Neustadt and Baden area. Our base in Sollenau allows for immediate response. Unlike large corporations, with us you speak directly to the driver who is coming to you.\n\n### Our Advantages:\n*   **Fast Arrival:** Direct access to the A2.\n*   **Languages:** Service in Polish, German, and English – no language barriers in a stressful situation.\n*   **24/7 Availability:** Real round-the-clock duty, including holidays.\n*   **Transparency:** Clear prices agreed upon before arrival.\n\n## Service Comparison: Roadside Assistance vs. Towing\n\nCustomers often ask if they need towing or if on-site help is sufficient. Here is a short guide:\n\n| Service | When to choose? | Example action |\n| :--- | :--- | :--- |\n| **Roadside Assistance** | Minor fault, dead battery, flat tire | Jump start, wheel change, fuel delivery, minor electrical repairs |\n| **Towing Service** | Serious engine/gearbox failure, accident, steering damage | Towing to base in Sollenau, partner workshop, or international transport |\n\n### When is a Jump Start Sufficient?\nIf your car doesn't start after a stop, and the starter only clicks, the battery is likely dead. In this situation, our mobile service will arrive and start the car with a professional booster, also checking the alternator charging. This is a cheaper and faster option than towing.\n\n## What to Prepare Before Calling for Help?\n\nTo help us reach you as quickly as possible, prepare the following information:\n*   **Exact Location:** Kilometer number from the marker post (e.g., A2 km 34.5 direction Graz).\n*   **Car Make and Model:** And color – it will be easier for us to spot you.\n*   **Fault Description:** What happened? Are wheels locked? (Important for winching onto the truck).\n*   **Number of Passengers:** Do you need transport for your family?\n\n## Summary\n\nA breakdown on the A2 doesn't have to mean the end of your trip. With professional help from **Pablo e.U.**, you will quickly return to the road or safely reach your destination. Save our number today – better to have it and not need it, than need it and not have it.\n\n**Need help now? Click below!**",
+    "categorySlug": "roadside-assistance",
+    "url": "/en/guides/breakdown-a2-roadside-assistance",
+    "readingTime": 3,
+    "headings": [
+      {
+        "depth": 2,
+        "text": "Why Choose a Local Towing Service from Sollenau?",
+        "slug": "why-choose-a-local-towing-service-from-sollenau"
+      },
+      {
+        "depth": 3,
+        "text": "Our Advantages:",
+        "slug": "our-advantages"
+      },
+      {
+        "depth": 2,
+        "text": "Service Comparison: Roadside Assistance vs. Towing",
+        "slug": "service-comparison-roadside-assistance-vs-towing"
+      },
+      {
+        "depth": 3,
+        "text": "When is a Jump Start Sufficient?",
+        "slug": "when-is-a-jump-start-sufficient"
+      },
+      {
+        "depth": 2,
+        "text": "What to Prepare Before Calling for Help?",
+        "slug": "what-to-prepare-before-calling-for-help"
+      },
+      {
+        "depth": 2,
+        "text": "Summary",
+        "slug": "summary"
+      }
+    ]
+  },
+  {
+    "title": "Awaria na A2? Kompletny przewodnik po pomocy drogowej 24/7",
+    "description": "Instrukcja bezpieczeństwa + kiedy Pannenhilfe wystarczy, a kiedy potrzebujesz lawety.",
+    "date": "2025-12-22T00:00:00.000Z",
+    "updated": "2025-12-22T00:00:00.000Z",
+    "locale": "pl",
+    "cluster": "roadside",
+    "slug": "awaria-a2-pomoc-drogowa-24-7",
+    "translationKey": "a2-breakdown-guide",
+    "faq": [
+      {
+        "q": "Czy oferujecie pomoc drogową w nocy?",
+        "a": "Tak, działamy 24/7, 365 dni w roku."
+      },
+      {
+        "q": "Czy można zapłacić kartą?",
+        "a": "Tak, akceptujemy gotówkę i popularne karty."
+      }
+    ],
+    "draft": false,
+    "featured": true,
+    "author": "Pablo e.U.",
+    "code": "const{Fragment:e,jsx:n,jsxs:i}=arguments[0];function _createMdxContent(a){const r={a:\"a\",h2:\"h2\",li:\"li\",ol:\"ol\",p:\"p\",...a.components};return i(e,{children:[n(r.h2,{id:\"pierwsze-5-minut-po-awarii-checklista\",children:n(r.a,{href:\"#pierwsze-5-minut-po-awarii-checklista\",children:\"Pierwsze 5 minut po awarii (checklista)\"})}),\"\\n\",i(r.ol,{children:[\"\\n\",n(r.li,{children:\"Włącz światła awaryjne.\"}),\"\\n\",n(r.li,{children:\"Załóż kamizelkę.\"}),\"\\n\",n(r.li,{children:\"Ustaw trójkąt.\"}),\"\\n\",n(r.li,{children:\"Zjedź w bezpieczne miejsce.\"}),\"\\n\",n(r.li,{children:\"Zadzwoń po pomoc.\"}),\"\\n\"]}),\"\\n\",n(r.h2,{id:\"pannenhilfe-vs-laweta\",children:n(r.a,{href:\"#pannenhilfe-vs-laweta\",children:\"Pannenhilfe vs Laweta\"})}),\"\\n\",n(r.p,{children:\"W drobnych awariach często wystarczy pomoc na miejscu (start, koło). W przypadku wypadku lub poważnej usterki – laweta.\"})]})}return{default:function(e={}){const{wrapper:i}=e.components||{};return i?n(i,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "raw": "## Pierwsze 5 minut po awarii (checklista)\n\n1. Włącz światła awaryjne.\n2. Załóż kamizelkę.\n3. Ustaw trójkąt.\n4. Zjedź w bezpieczne miejsce.\n5. Zadzwoń po pomoc.\n\n## Pannenhilfe vs Laweta\n\nW drobnych awariach często wystarczy pomoc na miejscu (start, koło). W przypadku wypadku lub poważnej usterki – laweta.",
+    "categorySlug": "pomoc-drogowa",
+    "url": "/pl/poradnik/awaria-a2-pomoc-drogowa-24-7",
+    "readingTime": 1,
+    "headings": [
+      {
+        "depth": 2,
+        "text": "Pannenhilfe vs Laweta",
+        "slug": "pannenhilfe-vs-laweta"
+      }
+    ]
+  }
+]

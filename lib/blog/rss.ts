@@ -1,15 +1,24 @@
-import type { BlogPost } from "contentlayer/generated";
+import type { BlogPost } from "@velite";
 
 function escapeXml(s: string) {
-    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+	return s
+		.replace(/&/g, "&amp;")
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")
+		.replace(/"/g, "&quot;");
 }
 
-export function buildRssXml(siteUrl: string, title: string, description: string, posts: BlogPost[]) {
-    const items = posts
-        .slice(0, 50)
-        .map((p) => {
-            const link = `${siteUrl}${p.url}`;
-            return `
+export function buildRssXml(
+	siteUrl: string,
+	title: string,
+	description: string,
+	posts: BlogPost[],
+) {
+	const items = posts
+		.slice(0, 50)
+		.map((p) => {
+			const link = `${siteUrl}${p.url}`;
+			return `
         <item>
           <title>${escapeXml(p.title)}</title>
           <link>${link}</link>
@@ -18,10 +27,10 @@ export function buildRssXml(siteUrl: string, title: string, description: string,
           <description>${escapeXml(p.description)}</description>
         </item>
       `.trim();
-        })
-        .join("\n");
+		})
+		.join("\n");
 
-    return `<?xml version="1.0" encoding="UTF-8"?>
+	return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
     <title>${escapeXml(title)}</title>
